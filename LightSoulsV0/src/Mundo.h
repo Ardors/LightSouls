@@ -1,16 +1,20 @@
 #include "Circulo.h"
+#include "Vector.h"
+
+//ancho y alto de la ventana
+#define ANCHO 1000
+#define ALTO 700
+
 class Mundo
 {
 public: 
 	void tecla(unsigned char key);
+	void mouse(int x, int y);
 	void inicializa();
-	void rotarOjo();
 	void mueve();
 	void dibuja();
 
-	float x_ojo;
-	float y_ojo;
-	float z_ojo;
+	Vector camara;
 
 	Circulo c;
 };

@@ -1,2 +1,6 @@
 ﻿  Mundo.cpp
-  Pang.vcxproj -> D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSoulsV0\bin\LightSouls.exe
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(40,15): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(66,21): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(66,18): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(70,21): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+  Pang.vcxproj -> C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\bin\LightSouls.exe
