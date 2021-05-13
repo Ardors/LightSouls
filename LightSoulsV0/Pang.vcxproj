@@ -20,13 +20,17 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Circulo.cpp" />
+    <ClCompile Include="src\Interaccion.cpp" />
     <ClCompile Include="src\Mundo.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Segmento.cpp" />
     <ClCompile Include="src\Vector.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Circulo.h" />
+    <ClInclude Include="src\Interaccion.h" />
     <ClInclude Include="src\Mundo.h" />
+    <ClInclude Include="src\Segmento.h" />
     <ClInclude Include="src\Vector.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

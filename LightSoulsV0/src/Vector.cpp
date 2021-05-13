@@ -1,6 +1,7 @@
 #include "Vector.h"
 #include "math.h"
 
+
 Vector::Vector()
 {
 	x = y = 0;
@@ -41,4 +42,16 @@ Vector Vector::operator*(float op)
 	escalar.y = y * op;
 	return escalar;
 }
+Vector Vector::unitario() // devuelve un vector unitario
+{
+    Vector retorno(x, y);
+    float mod = modulo();
+    if (mod > 0.00001)
+    {
+        retorno.x /= mod;
+        retorno.y /= mod;
+    }
+    return retorno;
+}
+
 

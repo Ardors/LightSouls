@@ -1,5 +1,6 @@
 #include "Circulo.h"
 #include "Vector.h"
+#include "Segmento.h"
 
 //ancho y alto de la ventana
 #define ANCHO 1000
@@ -15,6 +16,6 @@ public:
 	void dibuja();
 
 	Vector camara;
-
+	
 	Circulo c;
 };
