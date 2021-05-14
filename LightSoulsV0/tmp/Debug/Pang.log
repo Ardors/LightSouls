@@ -1,12 +1,15 @@
-﻿  Circulo.cpp
-  Interaccion.cpp
+﻿  ListaProyectiles.cpp
   Mundo.cpp
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Mundo.cpp(23,15): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Mundo.cpp(50,21): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Mundo.cpp(50,18): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Mundo.cpp(54,21): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\fjpda\OneDrive\Escritorio\Informatica industrial y comunicaciones\LightSouls\LightSoulsV0\src\Mundo.cpp(29,15): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\fjpda\OneDrive\Escritorio\Informatica industrial y comunicaciones\LightSouls\LightSoulsV0\src\Mundo.cpp(31,25): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\fjpda\OneDrive\Escritorio\Informatica industrial y comunicaciones\LightSouls\LightSoulsV0\src\Mundo.cpp(39,20): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\fjpda\OneDrive\Escritorio\Informatica industrial y comunicaciones\LightSouls\LightSoulsV0\src\Mundo.cpp(39,15): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\fjpda\OneDrive\Escritorio\Informatica industrial y comunicaciones\LightSouls\LightSoulsV0\src\Mundo.cpp(40,18): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\fjpda\OneDrive\Escritorio\Informatica industrial y comunicaciones\LightSouls\LightSoulsV0\src\Mundo.cpp(40,15): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\fjpda\OneDrive\Escritorio\Informatica industrial y comunicaciones\LightSouls\LightSoulsV0\src\Mundo.cpp(65,21): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\fjpda\OneDrive\Escritorio\Informatica industrial y comunicaciones\LightSouls\LightSoulsV0\src\Mundo.cpp(65,18): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\fjpda\OneDrive\Escritorio\Informatica industrial y comunicaciones\LightSouls\LightSoulsV0\src\Mundo.cpp(69,21): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
   main.cpp
-  Segmento.cpp
-  Vector.cpp
+  Proyectil.cpp
   Generando código...
-  Pang.vcxproj -> D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\bin\LightSouls.exe
+  Pang.vcxproj -> C:\Users\fjpda\OneDrive\Escritorio\Informatica industrial y comunicaciones\LightSouls\LightSoulsV0\bin\LightSouls.exe

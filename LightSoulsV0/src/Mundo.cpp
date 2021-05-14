@@ -5,6 +5,10 @@
 #include "Circulo.h"
 #include "iostream"
 
+Mundo::~Mundo()
+{
+	proyectiles.destruirContenido();
+}
 
 void Mundo::dibuja()
 {
@@ -16,16 +20,27 @@ void Mundo::dibuja()
 
 
 	c.dibuja();
+
+	proyectiles.dibuja();
 }
 
 void Mundo::mueve()
 {
 	c.mueve(0.025);
+
+	proyectiles.mueve(0.025);
 }
 
 void Mundo::inicializa()
 {
-
+	for (int i = 0; i < 6; i++)
+	{
+		Proyectil* aux = new Proyectil;
+		aux->setPos(i, 1 + i);
+		aux->setVel(i, i);
+		//aux->setRadio(0.75 + i * 0.25);
+		proyectiles.agregar(aux); // agregar a la lista
+	}
 	
 }
 

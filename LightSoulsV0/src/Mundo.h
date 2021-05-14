@@ -1,6 +1,7 @@
 #include "Circulo.h"
 #include "Vector.h"
 #include "Segmento.h"
+#include "ListaProyectiles.h"
 
 //ancho y alto de la ventana
 #define ANCHO 1000
@@ -8,7 +9,8 @@
 
 class Mundo
 {
-public: 
+public:
+	~Mundo();
 	void tecla(unsigned char key);
 	void mouse(int x, int y);
 	void inicializa();
@@ -18,4 +20,5 @@ public:
 	Vector camara;
 	
 	Circulo c;
+	ListaProyectiles proyectiles;
 };
