@@ -1,6 +1,9 @@
+#pragma once
+
 #include "Circulo.h"
 #include "Vector.h"
 #include "Segmento.h"
+#include "Personaje.h"
 
 //ancho y alto de la ventana
 #define ANCHO 1000
@@ -17,5 +20,5 @@ public:
 
 	Vector camara;
 	
-	Circulo c;
+	Personaje c;
 };

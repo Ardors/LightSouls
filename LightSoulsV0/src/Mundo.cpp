@@ -4,16 +4,13 @@
 #include <math.h>
 #include "Circulo.h"
 #include "iostream"
-
+#include "stdio.h"
 
 void Mundo::dibuja()
 {
-	gluLookAt(camara.x, camara.y, 20,  // posicion del ojo
-			camara.x, camara.y, -10,      // hacia que punto mira  (0,0,0) 
-			0.0, 1.0, 0.0);      // definimos hacia arriba (eje Y)    
-			
-	//aqui es donde hay que poner el codigo de dibujo
-
+	gluLookAt(0, 0, 20,  // posicion del ojo
+		0, 0, -10,      // hacia que punto mira  (0,0,0) 
+		0.0, 1.0, 0.0);      // definimos hacia arriba (eje Y)    
 
 	c.dibuja();
 }
@@ -25,7 +22,7 @@ void Mundo::mueve()
 
 void Mundo::inicializa()
 {
-
+	c.cargar("armas/espada.txt");
 	
 }
 
@@ -38,8 +35,20 @@ void Mundo::tecla(unsigned char key)
 	case 'd':
 		c.setVel(2, 0);
 		break;
+	case 'w':
+		c.setVel(0, 2);
+		break;
+	case 's':
+		c.setVel(0, -2);
+		break;
 	case 'c':
 		c.setVel(0, 0);
+		break;
+	case 'q':
+		c.atacar(false);
+		break;
+	case 'e':
+		c.atacar(true);
 		break;
 	}
 }

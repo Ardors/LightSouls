@@ -1,12 +1,10 @@
-﻿  Circulo.cpp
-  Interaccion.cpp
-  Mundo.cpp
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Mundo.cpp(23,15): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Mundo.cpp(50,21): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Mundo.cpp(50,18): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Mundo.cpp(54,21): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-  main.cpp
-  Segmento.cpp
-  Vector.cpp
-  Generando código...
-  Pang.vcxproj -> D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\bin\LightSouls.exe
+﻿  Mundo.cpp
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Arma.h(9,13): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Arma.h(9,27): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Arma.h(10,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Arma.h(10,29): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(20,15): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(59,21): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(59,18): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(63,21): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+  Pang.vcxproj -> C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\bin\LightSouls.exe

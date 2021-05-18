@@ -3,10 +3,13 @@
 #include <freeglut.h>
 class Segmento
 {
-
-	Vector p1, p2;
 	friend class Interaccion;
+	
+protected:
+	Vector p1, p2;
+	
 public:
+	Segmento() {};
 	//constructor (1) con vectores
 	Segmento(Vector p1, Vector p2): p1(p1), p2(p2){}
 	//constructor (2) con puntos

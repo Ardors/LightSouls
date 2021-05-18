@@ -3,14 +3,16 @@
 #include "Vector.h"
 class Circulo
 {
-private:
+	friend class Interaccion;
+
+protected:
 	Vector pos;
 	Vector vel; 
 	float angulo = 0; //orientación independiente de la velocidad
 	float radio;
-	friend class Interaccion;
-public: 	
+	
 
+public: 	
 	Circulo() {radio = 1; }
 	Vector getPos() { return pos; }
 	float getRadio() { return radio; }

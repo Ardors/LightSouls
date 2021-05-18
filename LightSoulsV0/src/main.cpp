@@ -1,7 +1,8 @@
-#include "Mundo.h"
+#include "Maquina_Estados.h"
 #include "freeglut.h"
 
-Mundo mundo;
+//Mundo mundo;
+Maquina_Estados maquina;
 
 //los callback, funciones que seran llamadas automaticamente por la glut
 //cuando sucedan eventos
@@ -34,7 +35,7 @@ int main(int argc,char* argv[])
 	glutKeyboardFunc(OnKeyboardDown);
 	glutPassiveMotionFunc(OnPassiveMotionFunc);
 
-	mundo.inicializa();
+	maquina.inicializa();
 		
 	//pasarle el control a GLUT,que llamara a los callbacks
 	glutMainLoop();	
@@ -51,7 +52,7 @@ void OnDraw(void)
 	glMatrixMode(GL_MODELVIEW);	
 	glLoadIdentity();
 	
-	mundo.dibuja();
+	maquina.dibuja();
 
 	//no borrar esta linea ni poner nada despues
 	glutSwapBuffers();
@@ -59,7 +60,7 @@ void OnDraw(void)
 void OnKeyboardDown(unsigned char key, int x_t, int y_t)
 {
 	//poner aqui el código de teclado
-	mundo.tecla(key);
+	maquina.tecla(key);
 
 	glutPostRedisplay();
 }
@@ -67,16 +68,16 @@ void OnKeyboardDown(unsigned char key, int x_t, int y_t)
 void OnTimer(int value)
 {
 //poner aqui el código de animacion
-	mundo.mueve();
+	maquina.mueve();
 
 	//no borrar estas lineas
-	glutTimerFunc(25,OnTimer,0);
+	glutTimerFunc(10,OnTimer,0);
 	glutPostRedisplay();
 }
 
 void OnPassiveMotionFunc(int x, int y)
 {
 //se ejcuta al mover el ratón
-	mundo.mouse(x,y);
+	maquina.mouse(x,y);
 	glutPostRedisplay();
 }
