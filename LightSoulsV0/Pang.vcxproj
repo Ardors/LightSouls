@@ -19,14 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Desktop\ARDORS\tema4inicial_VS19x64\src\Menu.cpp" />
-    <ClCompile Include="..\..\..\..\Desktop\ARDORS\tema4inicial_VS19x64\src\Menutienda.cpp" />
     <ClCompile Include="src\AreaDano.cpp" />
     <ClCompile Include="src\Arma.cpp" />
     <ClCompile Include="src\Circulo.cpp" />
     <ClCompile Include="src\Interaccion.cpp" />
     <ClCompile Include="src\ListaProyectiles.cpp" />
     <ClCompile Include="src\Maquina_Estados.cpp" />
+    <ClCompile Include="src\Menu.cpp" />
+    <ClCompile Include="src\Menutienda.cpp" />
     <ClCompile Include="src\Mundo.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Personaje.cpp" />
@@ -35,8 +35,6 @@
     <ClCompile Include="src\Vector.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Desktop\ARDORS\tema4inicial_VS19x64\src\Menu.h" />
-    <ClInclude Include="..\..\..\..\Desktop\ARDORS\tema4inicial_VS19x64\src\Menutienda.h" />
     <ClInclude Include="..\..\..\..\Desktop\ETSIDI\6Cuatri\Informatica\lib\ETSIDI.h" />
     <ClInclude Include="src\Animacion.h" />
     <ClInclude Include="src\AreaDano.h" />
@@ -45,6 +43,8 @@
     <ClInclude Include="src\Interaccion.h" />
     <ClInclude Include="src\ListaProyectiles.h" />
     <ClInclude Include="src\Maquina_Estados.h" />
+    <ClInclude Include="src\Menu.h" />
+    <ClInclude Include="src\Menutienda.h" />
     <ClInclude Include="src\Mundo.h" />
     <ClInclude Include="src\Personaje.h" />
     <ClInclude Include="src\Proyectil.h" />

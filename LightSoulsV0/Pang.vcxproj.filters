@@ -51,10 +51,10 @@
     <ClCompile Include="src\Proyectil.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Desktop\ARDORS\tema4inicial_VS19x64\src\Menu.cpp">
+    <ClCompile Include="src\Menu.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Desktop\ARDORS\tema4inicial_VS19x64\src\Menutienda.cpp">
+    <ClCompile Include="src\Menutienda.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
@@ -95,13 +95,13 @@
     <ClInclude Include="src\Proyectil.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Desktop\ARDORS\tema4inicial_VS19x64\src\Menu.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\Desktop\ARDORS\tema4inicial_VS19x64\src\Menutienda.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\..\Desktop\ETSIDI\6Cuatri\Informatica\lib\ETSIDI.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Menu.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Menutienda.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
