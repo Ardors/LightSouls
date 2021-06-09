@@ -52,6 +52,16 @@ void Maquina_Estados::tecla(unsigned char key)
 	}
 }
 
+void Maquina_Estados::teclaSuelta(unsigned char key)
+{
+	switch (estado)
+	{
+	case GAME:
+		mundo.teclaSuelta(key);
+		break;
+	}
+}
+
 void Maquina_Estados::dibuja()
 {
 	switch (estado)
@@ -76,8 +86,6 @@ void Maquina_Estados::dibuja()
 		glEnd();
 		glEnable(GL_LIGHTING);
 		glDisable(GL_TEXTURE_2D);
-		//OpenGL::Print("Pulsa -w- para empezar", 0, 15, 255, 255, 255);
-		//OpenGL::Print("Pulsa -s- para salir", 0, 30, 255, 255, 255);
 		break;
 	case GAME:
 		mundo.dibuja();

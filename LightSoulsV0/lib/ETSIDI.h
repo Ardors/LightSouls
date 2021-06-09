@@ -75,6 +75,18 @@ using namespace std;
 	ETSIDI_API void setFont(const char *fuente, int size=12);
 	ETSIDI_API void print( const char *txt, const char *fuente=0, int size=12); 
 	ETSIDI_API void printxy(const char *txt, int x, int y, int z=0);
+	static void printxy2(const char* txt, float x, float y, int z = 0)
+	{
+
+		glPushMatrix();
+		glDisable(GL_LIGHTING);
+		glDisable(GL_DEPTH_TEST);
+		glTranslated(x, y, 0);
+		ETSIDI::print(txt);
+		glEnable(GL_DEPTH_TEST);
+		glEnable(GL_LIGHTING);
+		glPopMatrix();
+	}
 	//FUNCIONES PARA REPRODUCIR SONIDOS Y MUSICA------------------
 	ETSIDI_API void play(const char *  soundPath);
 	ETSIDI_API void playMusica(const char *  soundPath, bool repite=false);

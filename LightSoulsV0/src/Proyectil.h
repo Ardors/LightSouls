@@ -1,15 +1,18 @@
 #pragma once
 #include "Circulo.h"
-class Proyectil :
-    public Circulo
+#include <time.h>
+#include <math.h>
+
+class Proyectil: public Circulo
 {
 private:
     float masa;
-    float dano;             //daño
-    float tiempo;           //
+    float dano;                      //daño
+    clock_t tiempo_creacion;         //registra el momento en que se crea el proyectil
     friend class Interaccion;
+    float t_max;                     //tiempo tras el cual el proyectil desaparece
 public:
-    //Proyectil(float r = 1, float m = 1, float d = 1, float t = 0.025) :radio(r), masa(m), dano(d), tiempo(t) {}
+    Proyectil(Vector posicion = { 0,0 }, float ang = 0);
 
     float getMasa() { return masa; }
     void setMasa(float m) { masa = m; }
@@ -17,6 +20,5 @@ public:
     float getDano() { return dano; }
     void setDano(float d) { dano = d; }
     
-
+    bool t_excedido();               //comprueba si se ha excedido el tiempo maximo del proyectil
 };
-

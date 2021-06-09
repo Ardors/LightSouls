@@ -10,6 +10,7 @@ Maquina_Estados maquina;
 void OnDraw(void); //esta funcion sera llamada para dibujar
 void OnTimer(int value); //esta funcion sera llamada cuando transcurra una temporizacion
 void OnKeyboardDown(unsigned char key, int x, int y); //cuando se pulse una tecla	
+void OnKeyboardUp(unsigned char key, int x, int y); //cuando se suelta una tecla	
 void OnPassiveMotionFunc(int x, int y);
 
 int main(int argc,char* argv[])
@@ -27,13 +28,16 @@ int main(int argc,char* argv[])
 	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_COLOR_MATERIAL);	
 	glMatrixMode(GL_PROJECTION);
-	glOrtho(-10, 10, -7, 7, 0.1, 50);
+	glOrtho(-ANCHO/(RELACION*2), ANCHO / (RELACION * 2), -ALTO / (RELACION * 2), ALTO / (RELACION * 2), 0.1, 50);
 
 	//Registrar los callbacks
 	glutDisplayFunc(OnDraw);
 	glutTimerFunc(25,OnTimer,0);//le decimos que dentro de 25ms llame 1 vez a la funcion OnTimer()
 	glutKeyboardFunc(OnKeyboardDown);
+	glutKeyboardUpFunc(OnKeyboardUp);
 	glutPassiveMotionFunc(OnPassiveMotionFunc);
+
+	glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
 
 	maquina.inicializa();
 		
@@ -61,7 +65,13 @@ void OnKeyboardDown(unsigned char key, int x_t, int y_t)
 {
 	//poner aqui el código de teclado
 	maquina.tecla(key);
+	glutPostRedisplay();
+}
 
+void OnKeyboardUp(unsigned char key, int x_t, int y_t)
+{
+	//poner aqui el código de teclado
+	maquina.teclaSuelta(key);
 	glutPostRedisplay();
 }
 

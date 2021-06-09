@@ -9,6 +9,9 @@ using namespace std;
 
 void Arma::cargar(const char* archivo)
 {
+	sprite.setCenter(1, 0.5);
+	sprite.setSize(4, 1);
+
 	ifstream fuente(archivo);
 	if (fuente) {
 		std::cout << "cargado" << std::endl;
@@ -33,6 +36,9 @@ void Arma::dibuja()
 	glVertex3d(x1*cos(ang1), y1, 0);
 	glVertex3d(x1+ dis2 * cos(ang2+ang1), y1 + dis2 * sin(ang2+ang1), 0);
 	glEnd();
+	glTranslatef(x1,y1,0);
+	glRotatef((ang2+ang1)*57.3, 0, 0, 1);
+	sprite.draw();
 	glPopMatrix();
 }
 
@@ -48,10 +54,17 @@ void Arma::atacar(bool secundario)
 
 void Arma::mueve()
 {
-	if (ani1.pasarFrame(&ang1, &ang2, &dis1)) {  }
-	else if (ani2.pasarFrame(&ang1, &ang2, &dis1)) {  }
+	if (ani1.pasarFrame(&ang1, &ang2, &dis1)) 
+	{ 
+		atacando = 1;
+	}
+	else if (ani2.pasarFrame(&ang1, &ang2, &dis1))
+	{  
+		atacando = 2;
+	}
 	else
 	{
+		atacando = 0;
 		ang1 = ang1o;
 		ang2 = ang2o;
 		dis1 = dis1o;	

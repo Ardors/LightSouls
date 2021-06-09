@@ -1,22 +1,15 @@
-﻿  Menu.cpp
-  Menutienda.cpp
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(8,29): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(9,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(11,40): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(25,23): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(28,51): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(28,30): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(33,41): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(36,34): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(37,40): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(38,38): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(43,43): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(46,37): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(47,44): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(48,37): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(53,44): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(56,37): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(57,44): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(58,37): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-  Generando código...
+﻿  Mundo.cpp
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,13): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,27): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,29): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(22,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(23,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(21,23): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(21,12): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(23,22): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(24,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(89,12): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(90,12): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(92,46): warning C4305: 'argumento': truncamiento de 'double' a 'float'
   Pang.vcxproj -> C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\bin\LightSouls.exe

@@ -12,6 +12,7 @@ public:
 	Mundo mundo;
 	void SpecialKey(unsigned char key);
 	void tecla(unsigned char key);
+	void teclaSuelta(unsigned char key);
 	void dibuja();
 	void inicializa() { mundo.inicializa(); }
 	void mueve() { mundo.mueve(); }
