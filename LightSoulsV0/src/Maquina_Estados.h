@@ -2,14 +2,17 @@
 #include <freeglut.h>
 #include <iostream>
 #include "Mundo.h"
+#include "Menu.h"
+#include "Menutienda.h"
 
 using namespace std;
 
 class Maquina_Estados
 {
+
 public:
+	
 	Maquina_Estados();
-	Mundo mundo;
 	void SpecialKey(unsigned char key);
 	void tecla(unsigned char key);
 	void dibuja();
@@ -19,4 +22,8 @@ public:
 protected:
 	enum Estado { START, GAME, GAME_OVER, ENDING, MENU, TIENDA };
 	Estado estado;
+	Mundo mundo;
+	Menu principal;
+	Menutienda menutienda;
+	int dinero=200;
 };

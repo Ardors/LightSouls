@@ -1,9 +1,21 @@
 #include "Maquina_Estados.h"
+#include "Menu.h"
 #include "ETSIDI.h"
 
 Maquina_Estados::Maquina_Estados()
 {
 	estado = START;
+	principal.addFrase("JUGAR");
+	principal.addFrase("OPCIONES");
+	principal.addFrase("SALIR");
+	principal.setdesplazamiento(-4, -0.8f);
+
+	menutienda.addFrase("armas/lanza.txt");
+	menutienda.addFrase("armas/garrote.txt");
+	menutienda.addFrase("armas/espada.txt");
+	menutienda.addFrase("armas/alabarda.txt");
+	
+	//
 }
 
 void Maquina_Estados::SpecialKey(unsigned char key)
@@ -24,17 +36,28 @@ void Maquina_Estados::tecla(unsigned char key)
 	switch (estado)
 	{
 	case START:
+		
 		if (key == 'e')
 		{
 			estado = GAME;
 		}
-		if (key == 's')
-		{
-			//salimos del juego
+		switch (key) {
+		case 's':
+			principal.subir();
+			menutienda.subir();
+
+		case 'w':
+			principal.bajar();
+			menutienda.bajar();
+		case 'c':
+			menutienda.comprar(dinero);
 		}
 		break;
+		
 	case GAME:
 		mundo.tecla(key);
+		
+
 		break;
 	case GAME_OVER:
 		if (key)
@@ -62,25 +85,21 @@ void Maquina_Estados::dibuja()
 			0, 0, -10,      // hacia que punto mira  (0,0,0) 
 			0.0, 1.0, 0.0);      // definimos hacia arriba (eje Y)    
 
-	//aqui es donde hay que poner el codigo de dibujo
+	
+		
+		
+		
 
-		glEnable(GL_TEXTURE_2D);
-		glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("imagenes/fondo.png").id);
-		glDisable(GL_LIGHTING);
-		glBegin(GL_POLYGON);
-		glColor3f(1, 1, 1);
-		glTexCoord2d(0, 1); glVertex2f(-9, -6);
-		glTexCoord2d(1, 1); glVertex2f(9, -6);
-		glTexCoord2d(1, 0); glVertex2f(9, 6);
-		glTexCoord2d(0, 0); glVertex2f(-9, 6);
-		glEnd();
-		glEnable(GL_LIGHTING);
-		glDisable(GL_TEXTURE_2D);
-		//OpenGL::Print("Pulsa -w- para empezar", 0, 15, 255, 255, 255);
-		//OpenGL::Print("Pulsa -s- para salir", 0, 30, 255, 255, 255);
+		//principal.dibuja();
+		menutienda.dibuja();
 		break;
+	
+
 	case GAME:
-		mundo.dibuja();
+		//mundo.dibuja();
+		gluLookAt(0, 0, 20,  // posicion del ojo
+			0, 0, -10,      // hacia que punto mira  (0,0,0) 
+			0.0, 1.0, 0.0);
 		break;
 	case MENU:
 		//presentamos el dosier de controles y explicaciones de habilidades

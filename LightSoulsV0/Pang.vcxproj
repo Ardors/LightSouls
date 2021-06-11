@@ -35,7 +35,7 @@
     <ClCompile Include="src\Vector.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Desktop\ETSIDI\6Cuatri\Informatica\lib\ETSIDI.h" />
+    <ClInclude Include="lib\ETSIDI.h" />
     <ClInclude Include="src\Animacion.h" />
     <ClInclude Include="src\AreaDano.h" />
     <ClInclude Include="src\Arma.h" />

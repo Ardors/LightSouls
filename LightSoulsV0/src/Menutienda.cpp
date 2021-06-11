@@ -1,94 +1,118 @@
 #include "Menutienda.h"
+#include "Menu.h"
+#include <stdio.h>
+#include <iostream>
+#include "ETSIDI.h"
+#include "Vector.h"
+//using namespace std;
 
-#define ANCHO 51.2
-#define ALTO 28.8
 
-void Menutienda::dibuja()
+Menutienda::Menutienda()
 {
-	float celdax = ANCHO * 0.07;
-	float celday = ALTO * 0.14;
-	glPushMatrix();
-	glTranslatef(-ANCHO*0.44, ALTO*0.27, 0);  //el primer desplazamiento para encuadrar todo el menu
-	for (int i = 0; i < FILAS; i++) {
-		for (int j = 0; j < COLUMNAS; j++) { 
-			if(selec==i*COLUMNAS+j) //reconocer cual esta seleccionado 
-				glColor3ub(255, 255, 255);
-			else
-				glColor3ub(255, 0, 0);
-
-			glBegin(GL_POLYGON);
-			glVertex3f(0.0f, 0.0f, 0.0f);
-			glVertex3f(0.0f, celday, 0.0f);
-			glVertex3f(celdax, celday, 0.0f);
-			glVertex3f(celdax, 0.0f, 0.0f);
-			glEnd();
-			glTranslatef(celdax*1.3, 0, 0); //al siguiente cuadrado el espacio es de uno
-			
-		}
-		glTranslatef(-celdax * 1.3 * COLUMNAS, - celday * 1.3, 0); //para ir a la izquierda y bajar
-	}
-	glPopMatrix();
-
-	glPushMatrix();
-	glTranslatef(-ANCHO*0.44, -ALTO*0.41, 0);
-	glBegin(GL_POLYGON);
-	glVertex3f(-0.0f, 0.0f, 0.0f);
-	glVertex3f(-0.0f, ALTO*0.1, 0.0f);
-	glVertex3f(ANCHO*0.527, ALTO*0.1, 0.0f);
-	glVertex3f(ANCHO * 0.527, 0.0f, 0.0f);
-	glEnd();
-	glPopMatrix();
-
-	glPushMatrix();
-	glTranslatef(ANCHO * 0.15, ALTO * 0.09, 0);
-	glBegin(GL_POLYGON);
-	glVertex3f(-0.0f, 0.0f, 0.0f);
-	glVertex3f(-0.0f, ALTO * 0.32, 0.0f);
-	glVertex3f(ANCHO * 0.28, ALTO * 0.32, 0.0f);
-	glVertex3f(ANCHO * 0.28, 0.0f, 0.0f);
-	glEnd();
-	glPopMatrix();
-
-	glPushMatrix();
-	glTranslatef(ANCHO * 0.15, ALTO * -0.41, 0);
-	glBegin(GL_POLYGON);
-	glVertex3f(-0.0f, 0.0f, 0.0f);
-	glVertex3f(-0.0f, ALTO * 0.43, 0.0f);
-	glVertex3f(ANCHO * 0.28, ALTO * 0.43, 0.0f);
-	glVertex3f(ANCHO * 0.28, 0.0f, 0.0f);
-	glEnd();
-	glPopMatrix();
-	
+	selec = 0;
+	ETSIDI::setFont("fuentes/Bitwise.ttf", 40);
 }
+
+Menutienda::~Menutienda()
+{
+}
+
 
 void Menutienda::subir()
 {
-	if (selec < COLUMNAS)
-		selec += COLUMNAS* (FILAS - 1);
-	else
-		selec -= COLUMNAS;
+	if (++selec >= n) selec = 0; //hay dos instrucciones a la vez por un lado sma y por otto hace la comprobacion
+
 }
 
 void Menutienda::bajar()
 {
-	if (selec >= COLUMNAS*(FILAS-1))
-		selec -= COLUMNAS * (FILAS - 1);
-	else
-		selec += COLUMNAS;
+	if (--selec < 0) selec = n - 1; //asi puede hacer el bucle de seleccionar todos
+	//menudo error se ha solucionao poniendolo delante xd xq queremos q sume y luego baje o suba
+	
 }
 
-void Menutienda::dcha() //al hacer el modulo tienen el mismo resto q es 3 (si son numeros equidistantes)
+void Menutienda::dibuja()
 {
-	if (selec % COLUMNAS == COLUMNAS-1)
-		selec -= COLUMNAS - 1;
-	else
-		selec++;
+
+	
+
+	//SEÑOR TIENDA
+
+	glEnable(GL_TEXTURE_2D);
+	glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("imagenes/descargar.png").id);
+	glDisable(GL_LIGHTING);
+	glBegin(GL_POLYGON);
+	glColor3f(1, 1, 1);
+	glTexCoord2d(0, 1); glVertex2f(4, 2);
+	glTexCoord2d(1, 1); glVertex2f(8, 2);
+	glTexCoord2d(1, 0); glVertex2f(8, 6);
+	glTexCoord2d(0, 0); glVertex2f(4, 6);
+	glEnd();
+	glEnable(GL_LIGHTING);
+	glDisable(GL_TEXTURE_2D);
+
+
+	for (int i = 0; i < 4; i++) {
+		
+		glEnable(GL_TEXTURE_2D);
+		glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("imagenes/descargar.png").id);
+		glDisable(GL_LIGHTING);
+		glBegin(GL_POLYGON);
+		glColor3f(1, 1, 1);
+
+		glTexCoord2d(0, 1); glVertex2f(-8, 4-2.25*i);
+		glTexCoord2d(1, 1); glVertex2f(2, 4 - 2.25 * i);
+		glTexCoord2d(1, 0); glVertex2f(2,  6- 2.25 * i);
+		glTexCoord2d(0, 0); glVertex2f(-8, 6 - 2.25 * i);
+		glEnd();
+		glEnable(GL_LIGHTING);
+		glDisable(GL_TEXTURE_2D);
+	}
+	//rectangulorojo
+	glColor3ub(255, 0, 0);
+	glBegin(GL_POLYGON);
+	glVertex3f(-8.2f, 3.9-2.25*selec, 0.0f);
+	glVertex3f(-8.2f, 6.1-2.25 * selec, 0.0f);
+	glVertex3f(2.2f, 6.1-2.25 * selec, 0.0f);
+	glVertex3f(2.2f, 3.9-2.25 * selec, 0.0f);
+	glEnd();
+
+	ETSIDI::printxy2("hola \n adios", 4, 0);
+
 }
 
-void Menutienda::izqd() //al hacer el modulo tienen el mismo resto q es 3 (si son numeros equidistantes)
+void Menutienda::addFrase(const char cadena[]) //pos indicas cual de las frases quieres meter el valor
 {
-	if (selec % COLUMNAS == 0)
-		selec += COLUMNAS - 1;
-	else
-		selec--;
+	if (n < MAXN)
+	{
+		n++;
+		for (int i = 0; i < MAXFRASE; i++)
+			items[n - 1][i] = cadena[i];
+	}
+}
+ 
+void Menutienda::setdesplazamiento(float x, float y)
+{
+	desplazamiento.x = x;
+	desplazamiento.y = y;
+}
+
+void Menutienda::comprar(int &dinero)
+{
+	
+	ifstream fuente(items[selec]); //flujo para ficheros de entrada
+	if (fuente) {
+		std::cout << "cargado" << std::endl;
+	}
+	else {
+		std::cout << "error" << std::endl;
+		return;
+	}
+	int precio;
+	fuente >> precio;
+	if (dinero > precio-perdinero) {
+		dinero = dinero - (precio - perdinero); //perdinero = PERMANECEDINERO
+		perdinero = precio;
+		std::cout << dinero << std::endl;
+	}
 }

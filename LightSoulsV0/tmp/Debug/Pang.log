@@ -1,22 +1,14 @@
-﻿  Menu.cpp
-  Menutienda.cpp
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(8,29): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(9,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(11,40): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(25,23): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(28,51): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(28,30): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(33,41): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(36,34): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(37,40): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(38,38): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(43,43): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(46,37): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(47,44): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(48,37): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(53,44): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(56,37): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(57,44): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(58,37): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-  Generando código...
-  Pang.vcxproj -> C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\bin\LightSouls.exe
+﻿  Menutienda.cpp
+C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menu.h(6,1): warning C4005: 'MAXFRASE': redefinición de macro
+C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.h(8): message : vea la definición anterior de 'MAXFRASE'
+C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menu.h(7,1): warning C4005: 'MAXN': redefinición de macro
+C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.h(9): message : vea la definición anterior de 'MAXN'
+C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(63,39): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(64,39): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(65,39): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(66,40): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(74,23): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(75,23): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(76,22): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(77,22): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+  Pang.vcxproj -> C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\bin\LightSouls.exe
