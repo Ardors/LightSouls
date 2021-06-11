@@ -24,6 +24,7 @@
     <ClCompile Include="src\Circulo.cpp" />
     <ClCompile Include="src\Coliseo.cpp" />
     <ClCompile Include="src\Enemigo.cpp" />
+    <ClCompile Include="src\Inicio.cpp" />
     <ClCompile Include="src\Interaccion.cpp" />
     <ClCompile Include="src\ListaEnemigos.cpp" />
     <ClCompile Include="src\ListaProyectiles.cpp" />
@@ -46,6 +47,7 @@
     <ClInclude Include="src\Circulo.h" />
     <ClInclude Include="src\Coliseo.h" />
     <ClInclude Include="src\Enemigo.h" />
+    <ClInclude Include="src\Inicio.h" />
     <ClInclude Include="src\Interaccion.h" />
     <ClInclude Include="src\ListaEnemigos.h" />
     <ClInclude Include="src\ListaProyectiles.h" />

@@ -23,19 +23,27 @@ void Maquina_Estados::tecla(unsigned char key)
 {
 	switch (estado)
 	{
+	
 	case START:
 		if (key == 'e')
-		{
 			estado = GAME;
-		}
 		if (key == 's')
 		{
 			//salimos del juego
 		}
+		if (key == ' ')
+			estado = INICIO;	
 		break;
+
+	case INICIO:
+		inicio.tecla(key);
+		break;
+
 	case GAME:
 		mundo.tecla(key);
 		break;
+	
+
 	case GAME_OVER:
 		if (key)
 		{
@@ -43,7 +51,7 @@ void Maquina_Estados::tecla(unsigned char key)
 		}
 		//pantalla fin del juego
 		break;
-
+	
 	case ENDING:
 		if (key)
 		{
@@ -58,6 +66,10 @@ void Maquina_Estados::teclaSuelta(unsigned char key)
 	{
 	case GAME:
 		mundo.teclaSuelta(key);
+		break;
+
+	case INICIO:
+		inicio.teclaSuelta(key);
 		break;
 	}
 }
@@ -87,6 +99,12 @@ void Maquina_Estados::dibuja()
 		glEnable(GL_LIGHTING);
 		glDisable(GL_TEXTURE_2D);
 		break;
+
+
+	case INICIO:
+		inicio.dibuja();
+		break;
+
 	case GAME:
 		mundo.dibuja();
 		break;

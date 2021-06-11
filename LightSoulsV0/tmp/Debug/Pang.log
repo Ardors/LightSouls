@@ -1,102 +1,16 @@
-﻿  AreaDano.cpp
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\AreaDano.cpp(6,17): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-  Arma.cpp
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,13): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,27): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,29): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.cpp(40,23): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-  Circulo.cpp
-  Coliseo.cpp
-  Enemigo.cpp
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,13): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,27): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,29): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(22,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(23,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-  Interaccion.cpp
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,13): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,27): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,29): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(22,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(23,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-  ListaEnemigos.cpp
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,13): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,27): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,29): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(22,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(23,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-  ListaProyectiles.cpp
-  Maquina_Estados.cpp
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,13): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,27): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,29): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(22,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(23,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-  Menu.cpp
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menu.cpp(34,65): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-  Menutienda.cpp
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menu.h(6,1): warning C4005: 'MAXFRASE': redefinición de macro
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.h(8): message : vea la definición anterior de 'MAXFRASE'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menu.h(7,1): warning C4005: 'MAXN': redefinición de macro
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.h(9): message : vea la definición anterior de 'MAXN'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(63,39): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(64,39): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(65,39): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(66,40): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(74,23): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(75,23): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(76,22): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(77,22): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-  Mundo.cpp
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,13): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,27): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,29): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(22,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(23,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(21,23): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(21,12): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(23,22): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(24,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(89,12): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(90,12): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(92,46): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+﻿  Maquina_Estados.cpp
+C:\Users\angel\OneDrive\Documentos\INFORMÁTICA\LightSouls\LightSoulsV0\src\Arma.h(16,13): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\angel\OneDrive\Documentos\INFORMÁTICA\LightSouls\LightSoulsV0\src\Arma.h(16,27): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\angel\OneDrive\Documentos\INFORMÁTICA\LightSouls\LightSoulsV0\src\Arma.h(17,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\angel\OneDrive\Documentos\INFORMÁTICA\LightSouls\LightSoulsV0\src\Arma.h(17,29): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\angel\OneDrive\Documentos\INFORMÁTICA\LightSouls\LightSoulsV0\src\Luchador.h(22,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\angel\OneDrive\Documentos\INFORMÁTICA\LightSouls\LightSoulsV0\src\Luchador.h(23,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
   main.cpp
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,13): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,27): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,29): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(22,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(23,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-  Luchador.cpp
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,13): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,27): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,29): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(22,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(23,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Luchador.cpp(24,28): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Luchador.cpp(25,32): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Luchador.cpp(26,31): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Luchador.cpp(40,23): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-  Personaje.cpp
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,13): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,27): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,29): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(22,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(23,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-  Proyectil.cpp
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Proyectil.cpp(8,22): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Proyectil.cpp(9,12): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Proyectil.cpp(10,12): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Proyectil.cpp(17,31): warning C4244: '=': conversión de 'float' a 'clock_t'; posible pérdida de datos
-  Segmento.cpp
-  Vector.cpp
+C:\Users\angel\OneDrive\Documentos\INFORMÁTICA\LightSouls\LightSoulsV0\src\Arma.h(16,13): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\angel\OneDrive\Documentos\INFORMÁTICA\LightSouls\LightSoulsV0\src\Arma.h(16,27): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\angel\OneDrive\Documentos\INFORMÁTICA\LightSouls\LightSoulsV0\src\Arma.h(17,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\angel\OneDrive\Documentos\INFORMÁTICA\LightSouls\LightSoulsV0\src\Arma.h(17,29): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\angel\OneDrive\Documentos\INFORMÁTICA\LightSouls\LightSoulsV0\src\Luchador.h(22,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\angel\OneDrive\Documentos\INFORMÁTICA\LightSouls\LightSoulsV0\src\Luchador.h(23,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
   Generando código...
-  Pang.vcxproj -> C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\bin\LightSouls.exe
+  Pang.vcxproj -> C:\Users\angel\OneDrive\Documentos\INFORMÁTICA\LightSouls\LightSoulsV0\bin\LightSouls.exe
