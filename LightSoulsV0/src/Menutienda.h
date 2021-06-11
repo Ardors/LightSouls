@@ -1,19 +1,29 @@
 #pragma once
 #include "freeglut.h"
+#include <stdio.h>
+#include <iostream>
+#include "Vector.h"
+#include <fstream>
 
-#define FILAS 4
-#define COLUMNAS 6
+#define MAXFRASE 50
+#define MAXN 4
 
 class Menutienda {
+private:
+	int n = 0;
 	int selec=0;
-	//int objetos[FILAS][COLUMNAS];
-
-
+	char items[MAXN][MAXFRASE]; //para las frases jejejeejeej
+	Vector desplazamiento;
+	int perdinero=0;
 public:
-	void dibuja();
+	Menutienda();
+	virtual ~Menutienda();
 	void subir(); //void setselec();
 	void bajar();
-	void dcha();
-	void izqd();
 	int getSelec() { return selec; }
+	void dibuja();
+	void addFrase(const char cadena[]);
+	void setdesplazamiento(float x, float y);
+	void comprar(int &dinero); //es una referencia!!
+	
 };
