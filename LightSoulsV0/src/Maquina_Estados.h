@@ -2,8 +2,13 @@
 #include <freeglut.h>
 #include <iostream>
 #include "Mundo.h"
+<<<<<<< Updated upstream
 #include "Menu.h"
 #include "Menutienda.h"
+=======
+#include "Menutienda.h"
+#include "Menu.h"
+>>>>>>> Stashed changes
 
 using namespace std;
 
@@ -13,6 +18,13 @@ class Maquina_Estados
 public:
 	
 	Maquina_Estados();
+<<<<<<< Updated upstream
+=======
+	Mundo mundo;
+	Menu inicio;
+	
+	
+>>>>>>> Stashed changes
 	void SpecialKey(unsigned char key);
 	void tecla(unsigned char key);
 	void dibuja();

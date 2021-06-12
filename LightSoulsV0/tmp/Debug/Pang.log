@@ -1,8 +1,19 @@
+<<<<<<< Updated upstream
 ﻿  Menutienda.cpp
+=======
+﻿  Maquina_Estados.cpp
+C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,13): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,27): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,29): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(22,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(23,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+>>>>>>> Stashed changes
 C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menu.h(6,1): warning C4005: 'MAXFRASE': redefinición de macro
 C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.h(8): message : vea la definición anterior de 'MAXFRASE'
 C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menu.h(7,1): warning C4005: 'MAXN': redefinición de macro
 C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.h(9): message : vea la definición anterior de 'MAXN'
+<<<<<<< Updated upstream
 C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(63,39): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
 C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(64,39): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
 C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(65,39): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
@@ -11,4 +22,6 @@ C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda
 C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(75,23): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
 C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(76,22): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
 C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.cpp(77,22): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+=======
+>>>>>>> Stashed changes
   Pang.vcxproj -> C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\bin\LightSouls.exe

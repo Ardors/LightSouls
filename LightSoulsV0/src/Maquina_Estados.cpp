@@ -5,6 +5,7 @@
 Maquina_Estados::Maquina_Estados()
 {
 	estado = START;
+<<<<<<< Updated upstream
 	principal.addFrase("JUGAR");
 	principal.addFrase("OPCIONES");
 	principal.addFrase("SALIR");
@@ -16,6 +17,10 @@ Maquina_Estados::Maquina_Estados()
 	menutienda.addFrase("armas/alabarda.txt");
 	
 	//
+=======
+	inicio.addFrase("INICIO");
+	inicio.addFrase("opciones");
+>>>>>>> Stashed changes
 }
 
 void Maquina_Estados::SpecialKey(unsigned char key)
@@ -90,8 +95,15 @@ void Maquina_Estados::dibuja()
 		
 		
 
+<<<<<<< Updated upstream
 		//principal.dibuja();
 		menutienda.dibuja();
+=======
+		
+
+		inicio.dibuja();
+		//opciones.dibuja();
+>>>>>>> Stashed changes
 		break;
 	
 
