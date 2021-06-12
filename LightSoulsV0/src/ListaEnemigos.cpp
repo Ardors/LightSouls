@@ -104,3 +104,9 @@ Enemigo* ListaEnemigos::operator[](int i)
 		i = 0;
 	return lista[i];
 }
+
+void ListaEnemigos::colision_coliseo(Coliseo c)
+{
+	for (int i = 0; i < numero; i++)
+		Interaccion::colision_coliseo(*(lista[i]), c);
+}

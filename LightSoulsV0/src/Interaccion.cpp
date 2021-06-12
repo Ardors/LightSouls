@@ -27,3 +27,14 @@ bool Interaccion::rebote(Luchador& p1, Luchador& p2)
     }
     return false;
 }
+
+bool Interaccion::colision_coliseo(Luchador& p, Coliseo c)
+{
+    float distancia = (p.pos - c.pos).modulo();
+    Vector direccion = (p.pos - c.pos).unitario();
+    if (distancia > c.getRadio()) {
+        p.setPos((direccion.x * c.radio), (direccion.y * c.radio));
+        return true;
+    }
+    return false;
+}

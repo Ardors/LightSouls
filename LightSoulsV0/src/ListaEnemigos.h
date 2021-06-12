@@ -18,6 +18,7 @@ public:
 	void eliminar(Enemigo* e);
 	Enemigo* operator [](int i);
 	int getNumero() { return numero; }
+	void colision_coliseo(Coliseo c);
 
 private:
 	Enemigo* lista[MAX_ENEMIGOS];

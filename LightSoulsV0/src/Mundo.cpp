@@ -24,6 +24,8 @@ void Mundo::mueve()
 	enemigos.mueve(0.025, c, coliseo);
 	enemigos.rebote();
 	enemigos.rebote(c);
+	enemigos.colision_coliseo(coliseo);
+	Interaccion :: colision_coliseo(c, coliseo);
 }
 
 void Mundo::inicializa()
