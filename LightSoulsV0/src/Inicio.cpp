@@ -11,13 +11,25 @@ void Inicio::dibuja()
 
 	c.dibuja();
 	foro.dibuja();
-
+	merc_armas.dibuja();
+	merc_escudos.dibuja();
+	merc_pociones.dibuja();
 }
 
 void Inicio::mueve()
 {
 	c.setVel(2 * (d - a), 2 * (w - s));
 	c.mueve(0.025, raton);
+	Interaccion::colision_coliseo(c, foro);
+	//revisar colisiones
+	//Interaccion::colision_mercader(c, merc_armas);
+	//Interaccion::colision_mercader(c, merc_escudos);
+	//Interaccion::colision_mercader(c, merc_pociones);
+
+	Interaccion::tienda(c, merc_armas);
+	Interaccion::tienda(c, merc_escudos);
+	Interaccion::tienda(c, merc_pociones);
+	
 }
 
 void Inicio::tecla(unsigned char key)
@@ -60,6 +72,16 @@ void Inicio::inicializa()
 {
 	foro.setRadio(10);
 	c.cargar("armas/espada.txt");
+
+	merc_armas.setRadio(1.0);
+	merc_armas.setPos(7.5, -0.7);
+	merc_armas.setAng(180);
+
+	merc_escudos.setPos(0.9, 7.5);
+	merc_escudos.setAng(-90.0);
+
+	merc_pociones.setPos(-7.5, 0.7);
+	merc_pociones.setAng(0.0);
 }
 
 void Inicio::mouse(int x, int y)
