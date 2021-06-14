@@ -29,8 +29,8 @@ void Menu::bajar()
 void Menu::dibuja()
 {
 	for (int i = 0; i < n; i++) {
-		if (i == selec)ETSIDI::setTextColor(1, 1, 1);
-		else ETSIDI::setTextColor(0.5f, 0.5f, 0.5f);
+		if (i == selec)ETSIDI::setTextColor(1, 0, 0);
+		else ETSIDI::setTextColor(0.5f, 0.5f, 1);
 		ETSIDI::printxy2(frase[i], desplazamiento.x, desplazamiento.y - (float)i * 1.2);
 
 	}

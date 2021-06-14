@@ -3,6 +3,8 @@
 #include <iostream>
 #include "Mundo.h"
 #include "Inicio.h"
+#include "Menu.h"
+#include "Menutienda.h"
 
 using namespace std;
 
@@ -18,8 +20,13 @@ public:
 	void mueve() { mundo.mueve(); inicio.mueve(); }
 	void mouse(int x, int y) { mundo.mouse(x, y); inicio.mouse(x, y); }
 protected:
-	enum Estado { START, GAME, GAME_OVER, ENDING, MENU, TIENDA, INICIO };
+	enum Estado { START, GAME, GAME_OVER, ENDING, MENU, HERRERO, BRUJA, MAGO, INICIO, OPCIONES, MENUINICIO, MENUJUEGO };
 	Estado estado;
 	Mundo mundo;
 	Inicio inicio;
+	Menu principal;
+	Menu opciones;
+	Menu Minicio;
+	Menu Mjuego;
+	Menutienda bruja;
 };
