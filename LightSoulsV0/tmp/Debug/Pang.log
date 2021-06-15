@@ -1,12 +1,18 @@
-﻿  Maquina_Estados.cpp
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,13): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,27): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,29): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(22,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(23,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.h(8,1): warning C4005: 'MAXFRASE': redefinición de macro
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menu.h(6): message : vea la definición anterior de 'MAXFRASE'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menutienda.h(9,1): warning C4005: 'MAXN': redefinición de macro
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Menu.h(7): message : vea la definición anterior de 'MAXN'
-  Pang.vcxproj -> C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\bin\LightSouls.exe
+﻿  Inicio.cpp
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Arma.h(16,13): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Arma.h(16,27): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Arma.h(17,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Arma.h(17,29): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Luchador.h(22,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Luchador.h(23,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(22,26): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(22,13): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(23,22): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(79,29): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(84,31): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(89,32): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(94,25): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(101,12): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(102,12): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(104,50): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  Pang.vcxproj -> D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\bin\LightSouls.exe

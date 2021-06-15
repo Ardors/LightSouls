@@ -11,13 +11,27 @@ void Inicio::dibuja()
 
 	c.dibuja();
 	foro.dibuja();
-
+	merc_armas.dibuja();
+	merc_escudos.dibuja();
+	merc_pociones.dibuja();
+	puerta.dibuja();
 }
 
 void Inicio::mueve()
 {
 	c.setVel(2 * (d - a), 2 * (w - s));
 	c.mueve(0.025, raton);
+	Interaccion::colision_coliseo(c, foro);
+	//revisar colisiones
+	//Interaccion::colision_mercader(c, merc_armas);
+	//Interaccion::colision_mercader(c, merc_escudos);
+	//Interaccion::colision_mercader(c, merc_pociones);
+
+	Interaccion::tienda(c, merc_armas);
+	Interaccion::tienda(c, merc_escudos);
+	Interaccion::tienda(c, merc_pociones);
+	Interaccion::tienda(c, puerta);
+	
 }
 
 void Inicio::tecla(unsigned char key)
@@ -60,6 +74,26 @@ void Inicio::inicializa()
 {
 	foro.setRadio(10);
 	c.cargar("armas/espada.txt");
+
+	merc_armas.setSprite("imagenes/personaje.png");
+	merc_armas.setSize(1.8, 2.5);
+	merc_armas.setPos(7.5, 0.0);
+	merc_armas.setAng(180);
+
+	merc_escudos.setSprite("imagenes/personaje.png");
+	merc_escudos.setSize(1.8, 2.5);
+	merc_escudos.setPos(0.0, 7.5);
+	merc_escudos.setAng(-90.0);
+
+	merc_pociones.setSprite("imagenes/personaje.png");
+	merc_pociones.setSize(1.8, 2.5);
+	merc_pociones.setPos(-7.5, 0.0);
+	merc_pociones.setAng(0.0);
+
+	puerta.setSprite("imagenes/personaje.png");
+	puerta.setSize(1.8, 2.5);
+	puerta.setPos(0.0, -4.5);
+	puerta.setAng(90.0);
 }
 
 void Inicio::mouse(int x, int y)
