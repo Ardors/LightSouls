@@ -38,18 +38,21 @@ bool Interaccion::colision_coliseo(Luchador& p, Coliseo c)
     }
     return false;
 }
-//////////////////////////////////////// REVISAR ////////////////////////////
-/*bool Interaccion::colision_mercader(Luchador& p, Circulo m)
+
+bool Interaccion::colision_mercader(Luchador& p, Circulo m)
 {
-    float distancia = (p.pos - m.pos).modulo();
+    int a, b;
+    Vector dir2;
+    float distancia = (p.pos - m.pos).modulo() ;
     Vector direccion = (p.pos - m.pos).unitario();
-    if (distancia < m.getRadio()) {
-        p.setPos((direccion.x * m.radio), (direccion.y * m.radio));
+    if (distancia < (m.getRadio()+1.0)) {
+
+        p.setPos((direccion.x * (m.radio+1.0) + m.pos.x), (direccion.y * (m.radio+1.0) + m.pos.y));
         return true;
     }
     return false;
-}*/
-//////////////////////////////////////
+}
+
 bool Interaccion::tienda(Circulo c1, Circulo c2)
 {
 

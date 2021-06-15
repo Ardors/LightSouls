@@ -23,9 +23,10 @@ void Inicio::mueve()
 	c.mueve(0.025, raton);
 	Interaccion::colision_coliseo(c, foro);
 	//revisar colisiones
-	//Interaccion::colision_mercader(c, merc_armas);
-	//Interaccion::colision_mercader(c, merc_escudos);
-	//Interaccion::colision_mercader(c, merc_pociones);
+	Interaccion::colision_mercader(c, merc_armas);
+	Interaccion::colision_mercader(c, merc_escudos);
+	Interaccion::colision_mercader(c, merc_pociones);
+	Interaccion::colision_mercader(c, puerta);
 
 	Interaccion::tienda(c, merc_armas);
 	Interaccion::tienda(c, merc_escudos);
