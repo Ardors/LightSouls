@@ -30,7 +30,7 @@ void Mundo::inicializa()
 {
 	coliseo.setRadio(10);
 
-	c.cargar("armas/espada.txt");
+	c.cargar("armas/garrote.txt");
 
 	enemigos.agregar(new Enemigo(1, 1, 500, 2, 2, 5, 4, 2));
 	enemigos.agregar(new Enemigo(2, 4, 500, 2, 1, 5, 4, 2));

@@ -1,8 +1,4 @@
 ﻿  Mundo.cpp
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,13): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,27): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,29): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
 C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(22,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
 C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(23,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
 C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(21,23): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
