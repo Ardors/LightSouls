@@ -19,13 +19,14 @@ public:
 	void inicializa();
 	void mueve();
 	void dibuja();
+	
 
 protected:
 	Coliseo foro;
 	Personaje c;
 	Vector raton;
 	Vector camara;
-	Mercader merc_armas, merc_escudos, merc_pociones;
+	Mercader merc_armas, merc_escudos, merc_pociones, puerta;
 	bool w, a, s, d;
 };
 

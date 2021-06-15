@@ -10,15 +10,14 @@ class Mercader : public Circulo
 	float radio_acc = 1.0;
 public:
 
-	Mercader() {cuerpo.setCenter(0.9, 2); cuerpo.setSize(1.8, 2.5);}
 	void dibuja();
-
+	void setSprite(const char* nombreSprite);
+	void setSize(float size_x, float size_y);
 protected:
-
+	char nombreSprite[30];
 	//cargamos los ficheros con los sprites de los mercaderes
 	//place holder de luchador, sustituir por mercaderes
 	SpriteSequence cuerpo{ "imagenes/personaje.png", 1 };
-	
 
 };
 
