@@ -27,6 +27,7 @@
     <ClCompile Include="src\Maquina_Estados.cpp" />
     <ClCompile Include="src\Menu.cpp" />
     <ClCompile Include="src\Menutienda.cpp" />
+    <ClCompile Include="src\Mercader.cpp" />
     <ClCompile Include="src\Mundo.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Personaje.cpp" />
@@ -45,6 +46,7 @@
     <ClInclude Include="src\Maquina_Estados.h" />
     <ClInclude Include="src\Menu.h" />
     <ClInclude Include="src\Menutienda.h" />
+    <ClInclude Include="src\Mercader.h" />
     <ClInclude Include="src\Mundo.h" />
     <ClInclude Include="src\Personaje.h" />
     <ClInclude Include="src\Proyectil.h" />

@@ -31,10 +31,16 @@ void Menutienda::bajar()
 	
 }
 
-void Menutienda::dibuja()
+void Menutienda::dibuja(int dinero)
 {
-
+	char cuenta[]="Dinero:    "; //array de caracteres con 4 espacios
+	//cuenta[] = "dinero: ";
+		cuenta[8] = '0'+((dinero % 1000) / 100); //SOLO PARA LAS CENTENAS
+		cuenta[9] = '0' + ((dinero % 100) / 10); //SOLO PARA LAS decenas
+		cuenta[10] = '0' + (dinero % 10) / 1; //SOLO PARA LAS unicdades
 	
+		ETSIDI::printxy2(cuenta, 4, 0);
+
 
 	//SEÑOR TIENDA
 
@@ -77,6 +83,16 @@ void Menutienda::dibuja()
 	glVertex3f(2.2f, 3.9-2.25 * selec, 0.0f);
 	glEnd();
 
+	//rectanguloazul
+	
+		glColor3ub(0, 0, 255);
+		glBegin(GL_POLYGON);
+		glVertex3f(-8.2f, 3.9 - 2.25 * comprada, 0.0f);
+		glVertex3f(-8.2f, 6.1 - 2.25 * comprada, 0.0f);
+		glVertex3f(2.2f, 6.1 - 2.25 * comprada, 0.0f);
+		glVertex3f(2.2f, 3.9 - 2.25 * comprada, 0.0f);
+		glEnd();
+	
 	ETSIDI::printxy2("hola \n adios", 4, 0);
 
 }
@@ -113,6 +129,8 @@ void Menutienda::comprar(int &dinero)
 	if (dinero > precio-perdinero) {
 		dinero = dinero - (precio - perdinero); //perdinero = PERMANECEDINERO
 		perdinero = precio;
+		comprada = selec;
 		std::cout << dinero << std::endl;
 	}
+
 }

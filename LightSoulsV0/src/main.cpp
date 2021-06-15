@@ -11,6 +11,7 @@ void OnDraw(void); //esta funcion sera llamada para dibujar
 void OnTimer(int value); //esta funcion sera llamada cuando transcurra una temporizacion
 void OnKeyboardDown(unsigned char key, int x, int y); //cuando se pulse una tecla	
 void OnPassiveMotionFunc(int x, int y);
+//void glutReshapeWindow(int width, int height); 
 
 int main(int argc,char* argv[])
 {
@@ -18,6 +19,8 @@ int main(int argc,char* argv[])
 	//y crear la ventana
 	glutInit(&argc, argv);
 	glutInitWindowSize(ANCHO, ALTO);
+	
+
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
 	glutCreateWindow("LightSouls");
 
@@ -35,13 +38,21 @@ int main(int argc,char* argv[])
 	glutKeyboardFunc(OnKeyboardDown);
 	glutPassiveMotionFunc(OnPassiveMotionFunc);
 
+<<<<<<< Updated upstream
+=======
+	
+	glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
+
+>>>>>>> Stashed changes
 	maquina.inicializa();
+
 		
 	//pasarle el control a GLUT,que llamara a los callbacks
 	glutMainLoop();	
 
 	return 0;   
 }
+
 
 void OnDraw(void)
 {

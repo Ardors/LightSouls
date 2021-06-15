@@ -13,6 +13,12 @@ void Mundo::dibuja()
 		0.0, 1.0, 0.0);      // definimos hacia arriba (eje Y)    
 
 	c.dibuja();
+<<<<<<< Updated upstream
+=======
+	enemigos.dibuja();
+	coliseo.dibuja();
+	
+>>>>>>> Stashed changes
 }
 
 void Mundo::mueve()
@@ -22,8 +28,23 @@ void Mundo::mueve()
 
 void Mundo::inicializa()
 {
+<<<<<<< Updated upstream
 	c.cargar("armas/espada.txt");
 	
+=======
+	coliseo.setRadio(10);
+	
+	c.cargar("armas/espada.txt");
+
+	enemigos.agregar(new Enemigo(1, 1, 500, 2, 2, 5, 4, 2));
+	enemigos.agregar(new Enemigo(2, 4, 500, 2, 1, 5, 4, 2));
+	enemigos.agregar(new Enemigo(2, 4, 500, 2, 1, 9, 5, 2));
+
+	enemigos[0]->cargar("armas/espada.txt");
+	enemigos[1]->cargar("armas/espada.txt");
+	enemigos[2]->cargar("armas/espada.txt");
+	ETSIDI::play("sonido/hollowknight.wav");
+>>>>>>> Stashed changes
 }
 
 void Mundo::tecla(unsigned char key)
@@ -55,6 +76,7 @@ void Mundo::tecla(unsigned char key)
 
 void Mundo::mouse(int x, int y) 
 {
+	
 	//convertir coordenas del mouse con respecto a ventana a respecto escena
 	Vector posRaton(x, -y);
 	Vector ventana(ANCHO, -ALTO);

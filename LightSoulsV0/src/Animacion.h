@@ -12,15 +12,15 @@ struct Animacion
 	{
 		fuente >> n;
 		frame = n;
-		std::cout << n << std::endl;
 		for (int i = 0; i < n; i++) {
 			fuente >> angulo1[i];
 			fuente >> angulo2[i];
 			fuente >> distancia1[i];
+			fuente >> activa[i];
 		}
 	}
 
-	bool pasarFrame(float* ang1, float* ang2, float* dis1) //devuelve false si la animacion acaba
+	bool pasarFrame(float* ang1, float* ang2, float* dis1, bool* act) //devuelve false si la animacion acaba
 	{
 		frame++;
 		if (frame >= n)
@@ -28,6 +28,7 @@ struct Animacion
 		*ang1 = angulo1[frame];
 		*ang2 = angulo2[frame];
 		*dis1 = distancia1[frame];
+		*act = activa[frame];
 		return true;
 	}
 
@@ -45,4 +46,5 @@ struct Animacion
 	float angulo1[MAX_TIEMPO];
 	float angulo2[MAX_TIEMPO];
 	float distancia1[MAX_TIEMPO];
+	float activa[MAX_TIEMPO];
 };
