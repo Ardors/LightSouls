@@ -32,8 +32,8 @@ bool Interaccion::colision_coliseo(Luchador& p, Coliseo c)
 {
     float distancia = (p.pos - c.pos).modulo();
     Vector direccion = (p.pos - c.pos).unitario();
-    if (distancia > c.getRadio()) {
-        p.setPos((direccion.x * c.radio), (direccion.y * c.radio));
+    if (distancia > (c.getRadio()-p.getRadio())) {
+        p.setPos((direccion.x * (c.radio - p.getRadio())), (direccion.y * (c.radio - p.getRadio())));
         return true;
     }
     return false;
@@ -41,8 +41,6 @@ bool Interaccion::colision_coliseo(Luchador& p, Coliseo c)
 
 bool Interaccion::colision_mercader(Luchador& p, Circulo m)
 {
-    int a, b;
-    Vector dir2;
     float distancia = (p.pos - m.pos).modulo() ;
     Vector direccion = (p.pos - m.pos).unitario();
     if (distancia < (m.getRadio()+1.0)) {

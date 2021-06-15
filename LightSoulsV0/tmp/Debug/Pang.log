@@ -1,30 +1,10 @@
-﻿  Inicio.cpp
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Arma.h(16,13): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Arma.h(16,27): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Arma.h(17,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Arma.h(17,29): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Luchador.h(22,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Luchador.h(23,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(22,26): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(22,13): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(23,22): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(80,29): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(85,31): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(90,32): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(95,25): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(102,12): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(103,12): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(105,50): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-  Interaccion.cpp
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Arma.h(16,13): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Arma.h(16,27): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Arma.h(17,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Arma.h(17,29): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Luchador.h(22,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Luchador.h(23,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Interaccion.cpp(50,88): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Interaccion.cpp(50,47): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Interaccion.cpp(44,9): warning C4101: 'a': variable local sin referencia
-D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Interaccion.cpp(44,12): warning C4101: 'b': variable local sin referencia
-  Generando código...
-  Pang.vcxproj -> D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\bin\LightSouls.exe
+﻿  Interaccion.cpp
+C:\Users\Silvia\Documents\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,13): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Silvia\Documents\GitHub\LightSouls\LightSoulsV0\src\Arma.h(16,27): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Silvia\Documents\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Silvia\Documents\GitHub\LightSouls\LightSoulsV0\src\Arma.h(17,29): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\Silvia\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(22,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\Silvia\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(23,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\Silvia\Documents\GitHub\LightSouls\LightSoulsV0\src\Interaccion.cpp(48,88): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\Silvia\Documents\GitHub\LightSouls\LightSoulsV0\src\Interaccion.cpp(48,47): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+  Pang.vcxproj -> C:\Users\Silvia\Documents\GitHub\LightSouls\LightSoulsV0\bin\LightSouls.exe
