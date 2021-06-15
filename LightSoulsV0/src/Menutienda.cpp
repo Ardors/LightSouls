@@ -31,12 +31,15 @@ void Menutienda::bajar()
 	
 }
 
-void Menutienda::dibuja()
+void Menutienda::dibuja(int dinero)
 {
+	char cuenta[] = "Dinero:    "; //array de caracteres con 4 espacios
+	//cuenta[] = "dinero: ";
+	cuenta[8] = '0' + ((dinero % 1000) / 100); //SOLO PARA LAS CENTENAS
+	cuenta[9] = '0' + ((dinero % 100) / 10); //SOLO PARA LAS decenas
+	cuenta[10] = '0' + (dinero % 10) / 1; //SOLO PARA LAS unicdades
 
-	
-
-	//SEÑOR TIENDA
+	ETSIDI::printxy2(cuenta, 4, 0);
 
 	glEnable(GL_TEXTURE_2D);
 	glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("imagenes/descargar.png").id);

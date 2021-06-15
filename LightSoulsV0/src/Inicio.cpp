@@ -17,6 +17,15 @@ void Inicio::dibuja()
 	puerta.dibuja();
 }
 
+int Inicio::triggers()
+{
+	if (Interaccion::tienda(c, merc_armas)) return 1;
+	else if (Interaccion::tienda(c, merc_escudos)) return 2;
+		else if (Interaccion::tienda(c, merc_pociones)) return 3;
+			else if (Interaccion::tienda(c, puerta)) return 4;
+			else return 0;
+}
+
 void Inicio::mueve()
 {
 	c.setVel(2 * (d - a), 2 * (w - s));

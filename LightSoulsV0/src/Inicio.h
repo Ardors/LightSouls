@@ -19,7 +19,7 @@ public:
 	void inicializa();
 	void mueve();
 	void dibuja();
-	
+	int triggers();
 
 protected:
 	Coliseo foro;

@@ -21,7 +21,7 @@ public:
 	void subir(); //void setselec();
 	void bajar();
 	int getSelec() { return selec; }
-	void dibuja();
+	void dibuja(int dinero);
 	void addFrase(const char cadena[]);
 	void setdesplazamiento(float x, float y);
 	void comprar(int &dinero); //es una referencia!!

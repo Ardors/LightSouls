@@ -16,8 +16,8 @@ public:
 	void tecla(unsigned char key);
 	void teclaSuelta(unsigned char key);
 	void dibuja();
-	void inicializa() { mundo.inicializa(); inicio.inicializa(); }
-	void mueve() { mundo.mueve(); inicio.mueve(); }
+	void inicializa() {}
+	void mueve();
 	void mouse(int x, int y) { mundo.mouse(x, y); inicio.mouse(x, y); }
 protected:
 	enum Estado { START, GAME, GAME_OVER, ENDING, MENU, HERRERO, BRUJA, MAGO, INICIO, OPCIONES, MENUINICIO, MENUJUEGO };
@@ -28,5 +28,6 @@ protected:
 	Menu opciones;
 	Menu Minicio;
 	Menu Mjuego;
-	Menutienda bruja;
+	Menutienda bruja ,herrero, mago;
+	int dinero = 200;
 };
