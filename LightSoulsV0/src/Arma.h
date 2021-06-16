@@ -32,5 +32,7 @@ public:
 	void atacar(bool secundario);
 	void mueve();
 	bool esActiva() { return activa; }
+	int getDanoestocada() { return daño1; }
+	int getDanobarrido() { return daño1;  }
 };
 

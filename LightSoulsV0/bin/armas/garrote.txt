@@ -1,4 +1,5 @@
 50
+imagenes/mGarrote.png
 30 40
 imagenes/garrote.png
 4 1

@@ -87,7 +87,7 @@ void Inicio::inicializa()
 	c.cargar("armas/espada.txt");
 
 	merc_armas.setSprite("imagenes/herrero2.png");
-	merc_armas.setSize(1.8, 2.5);
+	merc_armas.setSize(2.5, 3);
 	merc_armas.setPos(7.5, 0.0);
 	merc_armas.setAng(180);
 
@@ -101,10 +101,10 @@ void Inicio::inicializa()
 	merc_pociones.setPos(-7.5, 0.0);
 	merc_pociones.setAng(0.0);
 
-	puerta.setSprite("imagenes/personaje.png");
-	puerta.setSize(1.8, 2.5);
-	puerta.setPos(0.0, -4.5);
-	puerta.setAng(90.0);
+	puerta.setSprite("imagenes/puerta.png");
+	puerta.setSize(6, 3);
+	puerta.setPos(0, -9.4);
+	puerta.setAng(0);
 }
 
 void Inicio::mouse(int x, int y)

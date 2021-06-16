@@ -1,5 +1,6 @@
 #include "Arma.h"
 #include "freeglut.h"
+#define _USE_MATH_DEFINES
 #include "math.h"
 #include <iostream>
 #include <fstream>
@@ -13,7 +14,7 @@ void Arma::cargar(const char* archivo)
 	ifstream fuente(archivo);
 
 	fuente.ignore(15, '\n'); //ignorar precio
-
+	fuente.ignore(30, '\n'); //ignorar figura
 	fuente >> daño1;
 	fuente >> daño2;
 
@@ -40,9 +41,10 @@ void Arma::cargar(const char* archivo)
 
 void Arma::dibuja()
 {
+
 	float x1 = dis1 * cos(ang1);
 	float y1 = dis1 * sin(ang1);
-
+	/*
 	if (activa) {
 		glColor3ub(255, 0, 0);
 		glBegin(GL_POLYGON);
@@ -52,13 +54,13 @@ void Arma::dibuja()
 		glVertex3d(x1 * cos(ang1), y1+0.5f, 0);
 		
 		glEnd();
-	}
+	}*/
 	glColor3ub(0, 255, 0);
 	glPushMatrix();
-	glBegin(GL_LINES);
-	glVertex3d(x1, y1, 0);
-	glVertex3d(x1+ dis2 * cos(ang2+ang1), y1 + dis2 * sin(ang2+ang1), 0);
-	glEnd();
+	//glBegin(GL_LINES);
+	//glVertex3d(x1, y1, 0);
+	//glVertex3d(x1+ dis2 * cos(ang2+ang1), y1 + dis2 * sin(ang2+ang1), 0);
+	//glEnd();
 	glTranslatef(x1,y1,0);
 	glRotatef((ang2+ang1)*57.3, 0, 0, 1);
 	sprite.draw();
@@ -93,8 +95,9 @@ void Arma::mueve()
 		dis1 = dis1o;
 		activa = 0;
 	}
-	p1.x = origen->x + dis1 * cos(ang1);
-	p1.y = origen->y + dis1 * sin(ang1);
-	p2.x = p1.x + dis2 * cos(ang1 + ang2);
-	p2.y = p1.y + dis2 * sin(ang1 + ang2);
+	p1.x = origen->x + dis1 * cos(ang1 + *angulo*M_PI/180);
+	p1.y = origen->y + dis1 * sin(ang1 + *angulo * M_PI / 180);
+	p2.x = p1.x + dis2 * cos(ang1 + ang2 + *angulo * M_PI / 180);
+	p2.y = p1.y + dis2 * sin(ang1 + ang2 + *angulo * M_PI / 180);
+
 }

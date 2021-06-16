@@ -41,3 +41,10 @@ void Enemigo::atacar(Personaje p)
 		}
 	}
 }
+bool Enemigo::noVida()
+{
+	if (getVida() <= 0)
+		return true;
+	else
+		return false;
+}

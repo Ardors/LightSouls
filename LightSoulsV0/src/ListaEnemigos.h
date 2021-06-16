@@ -20,10 +20,12 @@ public:
 	Enemigo* operator [](int i);
 	int getNumero() { return numero; }
 	void colision_coliseo(Coliseo c);
-	
+	//void checkVida();          //recorre la lista verificando si han matado a algun enemigo y lo elimina
+	bool generar_oleadas();
 
 private:
 	Enemigo* lista[MAX_ENEMIGOS];
 	int numero;
+	int numero_oleadas = 0;
 };
 

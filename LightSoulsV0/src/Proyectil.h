@@ -2,20 +2,22 @@
 #include "Circulo.h"
 #include <time.h>
 #include <math.h>
+#include "ETSIDI.h"
 
 class Proyectil: public Circulo
 {
 private:
-    float masa;
+    float peso;
     float dano;                      //daño
     clock_t tiempo_creacion;         //registra el momento en que se crea el proyectil
     friend class Interaccion;
     float t_max;                     //tiempo tras el cual el proyectil desaparece
-public:
-    Proyectil(Vector posicion = { 0,0 }, float ang = 0);
 
-    float getMasa() { return masa; }
-    void setMasa(float m) { masa = m; }
+public:
+    Proyectil(Vector posicion = { 0,0 }, float ang = 0, float radio = 0.5, int damage = 5, float peso = 10);
+
+    float getPeso() { return peso; }
+    void setPeso(float m) { peso = m; }
 
     float getDano() { return dano; }
     void setDano(float d) { dano = d; }

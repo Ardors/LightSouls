@@ -26,6 +26,9 @@ public:
 	void atacar(bool secundario) { arma.atacar(secundario);}
 	void cargar(const char* fichero) { arma.cargar(fichero); }
 	float getVida() { return vida; }
+	int getPeso() { return peso; }
 	float setVida(float vida) { this->vida = vida; }
+	void restarVida(int dano);
+	bool muerto();
 };
 

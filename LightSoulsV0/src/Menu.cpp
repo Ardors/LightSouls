@@ -8,7 +8,7 @@ Menu::Menu()
 {
 	selec = 0;
 	n = 0; //la clase tiene una n y el construtor otra n.
-	ETSIDI::setFont("fuentes/Bitwise.ttf", 20);
+	ETSIDI::setFont("fuentes/Bitwise.ttf", 100);
 }
 
 Menu::~Menu()
@@ -29,9 +29,9 @@ void Menu::bajar()
 void Menu::dibuja()
 {
 	for (int i = 0; i < n; i++) {
-		if (i == selec)ETSIDI::setTextColor(1, 0, 0);
-		else ETSIDI::setTextColor(0.5f, 0.5f, 1);
-		ETSIDI::printxy2(frase[i], desplazamiento.x, desplazamiento.y - (float)i * 1.2);
+		if (i == selec)ETSIDI::setTextColor(1, 1, 0);
+		else ETSIDI::setTextColor(1, 1, 1);
+		ETSIDI::printxy2(frase[i], desplazamiento.x, desplazamiento.y - (float)i * 2.2);
 
 	}
 

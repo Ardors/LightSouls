@@ -58,4 +58,33 @@ bool Interaccion::tienda(Circulo c1, Circulo c2)
 
 }
 
+void Interaccion::ataque(Luchador& p1, Luchador& p2)
+{
+if (p1.arma.esActiva())
+    if (colision(p1.arma, p2))
+    {
+        //int dano = (lista[i]->getDano()) * ((int)(lista[i]->getPeso() - 0.05 * e.getPeso()));
+      
+        p2.restarVida(10);
+        std::cout << p2.getVida() << std::endl;
+    }
+}
+
+void Interaccion::colision(ListaProyectiles& lp, ListaEnemigos& le)
+{
+    for (int i = 0; i < lp.getNumero(); i++)
+    {
+        for (int j = 0; j < le.getNumero(); j++)
+        {
+            if (colision(*(lp[i]), *(le[j])))
+            {
+                int dano = (lp[i]->getDano()) * ((int)(lp[i]->getPeso() - 0.05 * le[j]->getPeso()));
+                le[j]->restarVida(dano);
+                std::cout << le[j]->getVida() << std::endl;
+                lp.eliminar(lp[i]);
+                return;
+            }
+        }
+    }
+}
 

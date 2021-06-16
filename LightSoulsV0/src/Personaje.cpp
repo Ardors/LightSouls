@@ -11,4 +11,16 @@ Personaje::Personaje()
 	piernas.setCenter(1.5, 1.25);
 	piernas.setSize(3, 2.5);
 	maxAngVel = 15;
+	vida = 100;
+	cargar("armas/espada.txt");
 }
+
+/*bool Personaje::muerto()
+{
+	if (vida <= 0) {
+		//cout << "has muerto";
+		return true;
+	}
+	else
+		return false;
+}*/

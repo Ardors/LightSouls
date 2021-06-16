@@ -80,6 +80,7 @@ void ListaEnemigos::destruirContenido()
 	for (int i = 0; i < numero; i++)
 		delete lista[i];
 	numero = 0;
+	numero_oleadas = 0;
 }
 
 void ListaEnemigos::eliminar(int index)
@@ -114,4 +115,59 @@ void ListaEnemigos::colision_coliseo(Coliseo c)
 {
 	for (int i = 0; i < numero; i++)
 		Interaccion::colision_coliseo(*(lista[i]), c);
+}
+/*
+void ListaEnemigos::checkVida()
+{
+	for (int i = 0; i < numero; i++) {
+		if (lista[i]->noVida())
+			eliminar(lista[i]);
+	}
+}*/
+bool ListaEnemigos::generar_oleadas() {
+
+	//static int numero_oleadas = 0;
+
+	if (numero == 0) {
+		int numero_enemigos = 3 + rand() % (6 - 3);
+		int desfase_inicial =  rand() % (361 - 0);
+		int desfase_enemigos = 360 / numero_enemigos;
+		int i;
+		for (i = 0; i < numero_enemigos; i++) {
+			//Posición
+			int angulo = desfase_inicial + desfase_enemigos * i;
+			float posicion_x = 8 * cos(angulo * 3.1415 / 180.0); 
+			float posicion_y = 8 * sin(angulo * 3.1415 / 180.0);
+
+			//Vida
+			float vida;
+			if (numero_oleadas < 4) vida = 100;
+			else vida = 200;
+
+			//Peso
+			int tipo_enemigo = rand() % (10 - 0);
+			float p;
+			if (tipo_enemigo == 0 || tipo_enemigo == 1) p = 1.5f; //Garrote
+			if (tipo_enemigo == 2) p = 3.0f; //Alabarda
+			if (tipo_enemigo > 2 && tipo_enemigo < 5) p = 2.0f; //Lanza 
+			if (tipo_enemigo >= 5) p = 2.25f; //Espada
+
+			//Distancia al jugador
+			float dist_jugador;
+			if (tipo_enemigo > 3 && tipo_enemigo < 7) dist_jugador = 9;
+			else dist_jugador = 5;
+
+			//Generación de enemigos
+			agregar(new Enemigo(posicion_x, posicion_y, vida, p, 2, dist_jugador, 4, 2));
+
+			//Asignación de armas
+			if (tipo_enemigo == 0 || tipo_enemigo == 1) lista[i]->cargar("armas/garrote.txt"); //Garrote
+			if (tipo_enemigo == 2) lista[i]->cargar("armas/alabarda.txt"); //Alabarda
+			if (tipo_enemigo > 2 && tipo_enemigo < 5) lista[i]->cargar("armas/lanza.txt"); //Lanza 
+			if (tipo_enemigo >= 5) lista[i]->cargar("armas/espada.txt"); //Espada
+		}
+		numero_oleadas++;
+	}
+	if (numero_oleadas >= 5) return true;
+	else return false;
 }

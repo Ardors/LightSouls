@@ -1,14 +1,59 @@
 ﻿  Inicio.cpp
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(28,27): warning C4244: 'return': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(29,43): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Inicio.cpp(32,26): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Inicio.cpp(32,13): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Inicio.cpp(33,22): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Inicio.cpp(90,29): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Inicio.cpp(95,31): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Inicio.cpp(100,32): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Inicio.cpp(105,25): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Inicio.cpp(112,12): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Inicio.cpp(113,12): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\src\Inicio.cpp(115,50): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-  Pang.vcxproj -> C:\Users\agust\OneDrive\Documentos\GitHub\LightSouls\LightSoulsV0\bin\LightSouls.exe
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Luchador.h(28,27): warning C4244: 'return': conversión de 'int' a 'float'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Luchador.h(29,25): warning C4244: 'return': conversión de 'float' a 'int'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Luchador.h(30,43): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(32,26): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(32,13): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(33,22): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(95,31): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(100,32): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(106,23): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(112,12): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(113,12): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Inicio.cpp(115,50): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  Interaccion.cpp
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Luchador.h(28,27): warning C4244: 'return': conversión de 'int' a 'float'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Luchador.h(29,25): warning C4244: 'return': conversión de 'float' a 'int'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Luchador.h(30,43): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Interaccion.cpp(48,88): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Interaccion.cpp(48,47): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Interaccion.cpp(81,26): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+  ListaEnemigos.cpp
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Luchador.h(28,27): warning C4244: 'return': conversión de 'int' a 'float'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Luchador.h(29,25): warning C4244: 'return': conversión de 'float' a 'int'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Luchador.h(30,43): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\ListaEnemigos.cpp(139,21): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\ListaEnemigos.cpp(140,21): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\ListaEnemigos.cpp(161,48): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+  Maquina_Estados.cpp
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Luchador.h(28,27): warning C4244: 'return': conversión de 'int' a 'float'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Luchador.h(29,25): warning C4244: 'return': conversión de 'float' a 'int'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Luchador.h(30,43): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Menutienda.h(8,1): warning C4005: 'MAXFRASE': redefinición de macro
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Menu.h(6): message : vea la definición anterior de 'MAXFRASE'
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Menutienda.h(9,1): warning C4005: 'MAXN': redefinición de macro
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Menu.h(7): message : vea la definición anterior de 'MAXN'
+  Mundo.cpp
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Luchador.h(28,27): warning C4244: 'return': conversión de 'int' a 'float'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Luchador.h(29,25): warning C4244: 'return': conversión de 'float' a 'int'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Luchador.h(30,43): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Mundo.cpp(25,20): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Mundo.cpp(26,20): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Mundo.cpp(57,23): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Mundo.cpp(57,12): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Mundo.cpp(59,22): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Mundo.cpp(60,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Mundo.cpp(68,25): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Mundo.cpp(153,12): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Mundo.cpp(154,12): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Mundo.cpp(156,46): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  main.cpp
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Luchador.h(28,27): warning C4244: 'return': conversión de 'int' a 'float'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Luchador.h(29,25): warning C4244: 'return': conversión de 'float' a 'int'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Luchador.h(30,43): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Menutienda.h(8,1): warning C4005: 'MAXFRASE': redefinición de macro
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Menu.h(6): message : vea la definición anterior de 'MAXFRASE'
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Menutienda.h(9,1): warning C4005: 'MAXN': redefinición de macro
+D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\src\Menu.h(7): message : vea la definición anterior de 'MAXN'
+  Generando código...
+  Pang.vcxproj -> D:\Documents\3º\INFORMÁTICA INDUSTRIAL\LIGHT SOULS\Code\LightSouls\LightSoulsV0\bin\LightSouls.exe

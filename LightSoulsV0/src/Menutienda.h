@@ -17,6 +17,7 @@ private:
 	Vector desplazamiento;
 	int perdinero=0;
 	const char* dibujotienda;
+	char imagenes[MAXN][MAXFRASE];
 public:
 	Menutienda();
 	virtual ~Menutienda();

@@ -19,7 +19,7 @@ public:
 	void setPos(float x, float y);
 	void setRadio(float r) { radio = r; }
 	void setVel(float vx, float vy);
-	void setAng(float ang) { angulo = ang; }
+	void setAng(float ang);
 	float getAng() { return angulo; }
 	void dibuja();
 	void mueve(float t);

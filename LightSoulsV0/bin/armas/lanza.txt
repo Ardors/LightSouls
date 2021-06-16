@@ -1,4 +1,5 @@
 100
+imagenes/mLanza.png
 60 40
 imagenes/lanza.png
 6 0.6

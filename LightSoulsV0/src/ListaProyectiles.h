@@ -1,6 +1,6 @@
 #pragma once
 #include"Proyectil.h"
-#define MAX_PROYECTILES 100
+#define MAX_PROYECTILES 2
 class ListaProyectiles
 {
 private:

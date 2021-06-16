@@ -5,6 +5,7 @@
 void Luchador::dibuja()
 {
 
+
 	glPushMatrix();
 	glTranslatef(pos.x, pos.y, 0);
 	glRotatef(angulo, 0, 0, 1);
@@ -15,7 +16,7 @@ void Luchador::dibuja()
 	glPushMatrix();
 	glTranslatef(pos.x, pos.y, 0);
 	glRotatef(angulo, 0, 0, 1);
-	glutWireSphere(radio, 10, 10);
+	//glutWireSphere(radio, 10, 10);
 	arma.dibuja();
 	glPopMatrix();
 
@@ -53,4 +54,23 @@ void Luchador::mueve(float t, Vector obj)
 		setAng(getAng() - difAng);
 	}
 	arma.mueve();
+}
+
+void Luchador::restarVida(int dano)
+{
+	
+	vida -= dano;
+	if (vida < 0)
+		vida = 0;
+}
+
+bool Luchador::muerto()
+{
+
+		if (vida <= 0) {
+			return true;
+		}
+		else
+			return false;
+
 }

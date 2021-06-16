@@ -8,5 +8,7 @@ class Personaje: public Luchador
 	
 public:
 	Personaje();
+	void setVida(int a) { vida = a; }
+	//bool muerto();
 };
 

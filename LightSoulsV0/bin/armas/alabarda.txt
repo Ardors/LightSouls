@@ -1,4 +1,5 @@
 175
+imagenes/mAlabarda.png
 85 60
 imagenes/alabarda.png
 6 2

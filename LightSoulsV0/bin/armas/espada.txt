@@ -1,4 +1,5 @@
 100
+imagenes/mEspada.png
 70 50
 imagenes/espada.png
 4 1

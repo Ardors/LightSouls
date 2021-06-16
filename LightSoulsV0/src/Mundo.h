@@ -4,6 +4,7 @@
 #include "Segmento.h"
 #include "Personaje.h"
 #include "ListaEnemigos.h"
+#include "ListaProyectiles.h"
 #include "Coliseo.h"
 #include <stdio.h>
 #include <iostream>
@@ -15,7 +16,10 @@
 
 class Mundo
 {
+	friend class Maquina_Estados;
 public: 
+	
+	~Mundo();
 	void tecla(unsigned char key);
 	void teclaSuelta(unsigned char key);
 	void mouse(int x, int y);
@@ -31,4 +35,5 @@ protected:
 	Personaje c;
 	ListaEnemigos enemigos;
 	Coliseo coliseo;
+	ListaProyectiles proyectiles;
 };

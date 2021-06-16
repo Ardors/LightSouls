@@ -1,14 +1,20 @@
 #include "Proyectil.h"
 
-Proyectil::Proyectil(Vector posicion, float ang)
+Proyectil::Proyectil(Vector posicion, float ang, float r, int damage, float p)
 {
 	tiempo_creacion = clock();
 	t_max = 1.0f;
 	pos = posicion;
 	ang = ang * 3.14159 / 180;
-	vel.x = 1 * cos(ang);
-	vel.y = 1 * sin(ang);
+	vel.x = 4 * cos(ang);
+	vel.y = 4 * sin(ang);
+	radio = r;
+	dano = damage;
+	peso = p;
+
 }
+
+
 
 bool Proyectil::t_excedido()
 {

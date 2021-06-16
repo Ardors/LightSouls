@@ -12,6 +12,15 @@ void Circulo::setVel(float vx, float vy)
 	vel.y = vy;
 }
 
+void Circulo::setAng(float ang)
+{
+	while (ang > 360)
+		ang -= 360;
+	while (ang < -360)
+		ang += 360;
+	angulo = ang;
+}
+
 void Circulo::dibuja()
 {
 	glColor3ub(255, 0, 0);
