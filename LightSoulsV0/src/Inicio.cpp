@@ -10,11 +10,12 @@ void Inicio::dibuja()
 		0.0, 1.0, 0.0);
 
 	c.dibuja();
-	foro.dibuja();
 	merc_armas.dibuja();
 	merc_escudos.dibuja();
 	merc_pociones.dibuja();
 	puerta.dibuja();
+	foro.dibuja();
+
 }
 
 int Inicio::triggers()
@@ -85,17 +86,17 @@ void Inicio::inicializa()
 	foro.setRadio(10);
 	c.cargar("armas/espada.txt");
 
-	merc_armas.setSprite("imagenes/personaje.png");
+	merc_armas.setSprite("imagenes/herrero2.png");
 	merc_armas.setSize(1.8, 2.5);
 	merc_armas.setPos(7.5, 0.0);
 	merc_armas.setAng(180);
 
-	merc_escudos.setSprite("imagenes/personaje.png");
+	merc_escudos.setSprite("imagenes/mago2.png");
 	merc_escudos.setSize(1.8, 2.5);
 	merc_escudos.setPos(0.0, 7.5);
 	merc_escudos.setAng(-90.0);
 
-	merc_pociones.setSprite("imagenes/personaje.png");
+	merc_pociones.setSprite("imagenes/bruja2.png");
 	merc_pociones.setSize(1.8, 2.5);
 	merc_pociones.setPos(-7.5, 0.0);
 	merc_pociones.setAng(0.0);

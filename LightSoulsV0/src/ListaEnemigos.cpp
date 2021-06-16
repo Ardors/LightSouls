@@ -55,6 +55,12 @@ void ListaEnemigos::rebote(Personaje p)
 		Interaccion::rebote(p, *lista[i]);
 }
 
+void ListaEnemigos::atacar(Personaje p)
+{
+	for (int i = 0; i < numero; i++)
+		lista[i]->atacar(p);
+}
+
 bool ListaEnemigos::agregar(Enemigo* e)
 {
 	if (numero < MAX_ENEMIGOS) {
@@ -104,7 +110,6 @@ Enemigo* ListaEnemigos::operator[](int i)
 		i = 0;
 	return lista[i];
 }
-
 void ListaEnemigos::colision_coliseo(Coliseo c)
 {
 	for (int i = 0; i < numero; i++)

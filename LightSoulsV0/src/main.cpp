@@ -1,5 +1,6 @@
 #include "Maquina_Estados.h"
 #include "freeglut.h"
+#include "ETSIDI.h"
 
 //Mundo mundo;
 Maquina_Estados maquina;
@@ -15,10 +16,12 @@ void OnPassiveMotionFunc(int x, int y);
 
 int main(int argc,char* argv[])
 {
+	//ETSIDI::setJustificacion();
+
 	//Inicializar el gestor de ventanas GLUT
 	//y crear la ventana
 	glutInit(&argc, argv);
-	glutInitWindowSize(ANCHO, ALTO);
+	glutInitWindowSize(1152,648);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
 	glutCreateWindow("LightSouls");
 

@@ -12,9 +12,11 @@ class Menutienda {
 private:
 	int n = 0;
 	int selec=0;
+	int comprada = 0;
 	char items[MAXN][MAXFRASE]; //para las frases jejejeejeej
 	Vector desplazamiento;
 	int perdinero=0;
+	const char* dibujotienda;
 public:
 	Menutienda();
 	virtual ~Menutienda();
@@ -24,6 +26,8 @@ public:
 	void dibuja(int dinero);
 	void addFrase(const char cadena[]);
 	void setdesplazamiento(float x, float y);
-	void comprar(int &dinero); //es una referencia!!
+	char* comprar(int &dinero); //es una referencia!!
+	void setdibujo(const char* dibujo) { dibujotienda = dibujo; }
+	void cargardibujo();
 	
 };

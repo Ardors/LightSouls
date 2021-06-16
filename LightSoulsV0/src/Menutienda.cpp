@@ -42,7 +42,7 @@ void Menutienda::dibuja(int dinero)
 	ETSIDI::printxy2(cuenta, 4, 0);
 
 	glEnable(GL_TEXTURE_2D);
-	glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture("imagenes/descargar.png").id);
+	glBindTexture(GL_TEXTURE_2D, ETSIDI::getTexture(dibujotienda).id);
 	glDisable(GL_LIGHTING);
 	glBegin(GL_POLYGON);
 	glColor3f(1, 1, 1);
@@ -71,6 +71,8 @@ void Menutienda::dibuja(int dinero)
 		glEnable(GL_LIGHTING);
 		glDisable(GL_TEXTURE_2D);
 	}
+
+
 	//rectangulorojo
 	glColor3ub(255, 0, 0);
 	glBegin(GL_POLYGON);
@@ -78,6 +80,15 @@ void Menutienda::dibuja(int dinero)
 	glVertex3f(-8.2f, 6.1-2.25 * selec, 0.0f);
 	glVertex3f(2.2f, 6.1-2.25 * selec, 0.0f);
 	glVertex3f(2.2f, 3.9-2.25 * selec, 0.0f);
+	glEnd();
+
+	//rectanguloazul
+	glColor3ub(0, 0, 255);
+	glBegin(GL_POLYGON);
+	glVertex3f(-8.2f, 3.9 - 2.25 * comprada, 0.0f);
+	glVertex3f(-8.2f, 6.1 - 2.25 * comprada, 0.0f);
+	glVertex3f(2.2f, 6.1 - 2.25 * comprada, 0.0f);
+	glVertex3f(2.2f, 3.9 - 2.25 * comprada, 0.0f);
 	glEnd();
 
 	ETSIDI::printxy2("hola \n adios", 4, 0);
@@ -100,7 +111,7 @@ void Menutienda::setdesplazamiento(float x, float y)
 	desplazamiento.y = y;
 }
 
-void Menutienda::comprar(int &dinero)
+ char* Menutienda::comprar(int &dinero)
 {
 	
 	ifstream fuente(items[selec]); //flujo para ficheros de entrada
@@ -109,13 +120,16 @@ void Menutienda::comprar(int &dinero)
 	}
 	else {
 		std::cout << "error" << std::endl;
-		return;
+		return 0;
 	}
 	int precio;
 	fuente >> precio;
 	if (dinero > precio-perdinero) {
 		dinero = dinero - (precio - perdinero); //perdinero = PERMANECEDINERO
 		perdinero = precio;
+		comprada = selec;
 		std::cout << dinero << std::endl;
+		return items[selec];
 	}
+	
 }

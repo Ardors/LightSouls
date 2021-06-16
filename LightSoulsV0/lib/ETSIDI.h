@@ -70,7 +70,7 @@ using namespace std;
 	//FUNCIONES PARA MEDIR EL TIEMPO------------------------------
 	ETSIDI_API long getMillis();
 	//FUNCIONES PARA IMPRIMIR UN TEXTO EN OPENGL CON FUENTES TTF--
-	ETSIDI_API void setJustificacion(JUSTIFICACION_H just=IZQUIERDA, JUSTIFICACION_V=LINEA_BASE);
+	ETSIDI_API void setJustificacion(JUSTIFICACION_H just=CENTRO, JUSTIFICACION_V=LINEA_BASE);
 	ETSIDI_API void setTextColor(float r, float g, float b, float alpha=1.0F);
 	ETSIDI_API void setFont(const char *fuente, int size=12);
 	ETSIDI_API void print( const char *txt, const char *fuente=0, int size=12); 

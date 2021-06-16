@@ -20,12 +20,11 @@ public:
 	void mueve();
 	void mouse(int x, int y) { mundo.mouse(x, y); inicio.mouse(x, y); }
 protected:
-	enum Estado { START, GAME, GAME_OVER, ENDING, MENU, HERRERO, BRUJA, MAGO, INICIO, OPCIONES, MENUINICIO, MENUJUEGO };
+	enum Estado { START, GAME, GAME_OVER, ENDING, MENU, HERRERO, BRUJA, MAGO, INICIO, CREDITOS, MENUINICIO, MENUJUEGO };
 	Estado estado;
 	Mundo mundo;
 	Inicio inicio;
 	Menu principal;
-	Menu opciones;
 	Menu Minicio;
 	Menu Mjuego;
 	Menutienda bruja ,herrero, mago;

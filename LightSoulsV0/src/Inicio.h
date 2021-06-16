@@ -12,6 +12,7 @@
 
 class Inicio
 {
+	friend class Maquina_Estados;
 public:
 	void tecla(unsigned char key);
 	void teclaSuelta(unsigned char key);

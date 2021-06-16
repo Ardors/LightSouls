@@ -10,33 +10,32 @@ Maquina_Estados::Maquina_Estados()
 
 	//MENU PRINCIPAL
 	principal.addFrase("JUGAR");
-	principal.addFrase("OPCIONES");
+	principal.addFrase("CREDITOS");
 	principal.addFrase("SALIR");
 	principal.setdesplazamiento(0, 0);
 	//
-	//MENU OPCIONES
-	opciones.addFrase("OPCIONES");
-	opciones.addFrase("OPCIONES");
-	opciones.addFrase("OPCIONES");
-	opciones.setdesplazamiento(-4, -0.8f);
-	//
 	//MENU INICIO
-	Minicio.addFrase("IVOLVER");
-	Minicio.addFrase("IOPCIONES");
-	Minicio.addFrase("ISALIR");
+	Minicio.addFrase("VOLVER");
+	Minicio.addFrase("SALIR");
 	Minicio.setdesplazamiento(-4, -0.8f);
 	//
 	//MENU JUEGO
-	Mjuego.addFrase("JVOLVER");
-	Mjuego.addFrase("IrInicio");
-	Mjuego.addFrase("JOPCIONES");
-	Mjuego.addFrase("JSALIR");
+	Mjuego.addFrase("VOLVER");
+	Mjuego.addFrase("INICIO");
+	Mjuego.addFrase("SALIR");
 	Mjuego.setdesplazamiento(-4, -0.8f);
 	//
 	bruja.addFrase("armas/lanza.txt");
 	bruja.addFrase("armas/garrote.txt");
 	bruja.addFrase("armas/espada.txt");
 	bruja.addFrase("armas/alabarda.txt");
+	
+	bruja.setdibujo("imagenes/bruja.png");
+
+	//
+	herrero.setdibujo("imagenes/herrero.png");
+	//
+	mago.setdibujo("imagenes/mago.png");
 
 }
 
@@ -66,10 +65,10 @@ void Maquina_Estados::tecla(unsigned char key)
 				estado = INICIO;
 				break;
 			case 1:
-				estado = OPCIONES;
+				estado = CREDITOS;
 				break;
 			case 2:
-				estado = INICIO; //debe cerar el juego
+				exit(0);
 				break;
 			}
 			break;
@@ -84,8 +83,6 @@ void Maquina_Estados::tecla(unsigned char key)
 
 	case INICIO:
 		inicio.tecla(key);
-		if (key == 27)
-			estado = INICIO;
 		if (key == ' ') {
 			switch (inicio.triggers())
 			{
@@ -104,6 +101,8 @@ void Maquina_Estados::tecla(unsigned char key)
 				break;
 			}
 		}
+		if (key == 27)
+			estado = MENUINICIO;
 		break;
 
 	case BRUJA:
@@ -113,6 +112,9 @@ void Maquina_Estados::tecla(unsigned char key)
 			break;
 		case 'w':
 			bruja.bajar();
+			break;
+		case ' ':
+			inicio.c.cargar(bruja.comprar(dinero));
 			break;
 		case 27:
 			estado = INICIO;
@@ -145,41 +147,8 @@ void Maquina_Estados::tecla(unsigned char key)
 		}
 		break;
 
-	case OPCIONES:
-		switch (key) {
-		case ' ':
-			switch (opciones.getSelec()) {
-			case 0:
-				estado = START;
-				break;
-			case 1:
-			{HWND foregroundWindow = GetForegroundWindow();
-			ShowWindow(foregroundWindow, SW_MAXIMIZE);
-			}
-			break;
-			case 2:
-			{HWND foregroundWindow = GetForegroundWindow();
-			ShowWindow(foregroundWindow, SW_NORMAL);
-			}
-			break;
-			case 3:
-			{
-				exit(0);
-			}
-
-			break;
-			}
-
-			break;
-		case 's':
-			opciones.subir();
-			ETSIDI::play("sonido/menu.wav");
-			break;
-		case 'w':
-			principal.bajar();
-			ETSIDI::play("sonido/menu.wav");
-			break;
-		}
+	case CREDITOS:
+		estado = START;
 		break;
 		
 	case MENUINICIO:
@@ -187,16 +156,10 @@ void Maquina_Estados::tecla(unsigned char key)
 		case ' ':
 			switch (Minicio.getSelec()) {
 			case 0:
-				estado = GAME; //seguirjugando
+				estado = INICIO; //seguirjugando
 				break;
 			case 1:
-				estado = START; //volerinicio
-				break;
-			case 2:
-				estado = OPCIONES;
-				break;
-			case 3:
-				estado = INICIO; //debe cerar el juego
+				exit(0);
 				break;
 			}
 			break;
@@ -224,13 +187,10 @@ void Maquina_Estados::tecla(unsigned char key)
 				estado = GAME; //seguirjugando
 				break;
 			case 1:
-				estado = START; //volerinicio
+				estado = INICIO; //volerinicio
 				break;
 			case 2:
-				estado = OPCIONES;
-				break;
-			case 3:
-				estado = INICIO; //debe cerar el juego
+				exit(0);//debe cerar el juego
 				break;
 			}
 			break;
@@ -319,8 +279,13 @@ void Maquina_Estados::dibuja()
 	case MAGO:
 		mago.dibuja(dinero);
 		break;
-	case OPCIONES:
-		opciones.dibuja();
+	case CREDITOS:
+		ETSIDI::printxy2("SILVIA SAETA ÁLVAREZ", 0, 4);
+		ETSIDI::printxy2("FRANCISCO JOSÉ PADILLA DE AGUIAR", 0, 2);
+		ETSIDI::printxy2("MIRIAM ORTEGA BUSTOS 54776", 0, 0);
+		ETSIDI::printxy2("PABLO DANIEL MARTÍN DE DOMINGO 54735", 0, -2);
+		ETSIDI::printxy2("ANGEL SANZ DÍAZ", 0, -4);
+
 		break;
 	case MENUINICIO:
 		Minicio.dibuja();

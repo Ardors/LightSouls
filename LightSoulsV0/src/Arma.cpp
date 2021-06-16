@@ -10,8 +10,6 @@ using namespace std;
 
 void Arma::cargar(const char* archivo)
 {
-
-
 	ifstream fuente(archivo);
 
 	fuente.ignore(15, '\n'); //ignorar precio
@@ -58,7 +56,7 @@ void Arma::dibuja()
 	glColor3ub(0, 255, 0);
 	glPushMatrix();
 	glBegin(GL_LINES);
-	glVertex3d(x1*cos(ang1), y1, 0);
+	glVertex3d(x1, y1, 0);
 	glVertex3d(x1+ dis2 * cos(ang2+ang1), y1 + dis2 * sin(ang2+ang1), 0);
 	glEnd();
 	glTranslatef(x1,y1,0);
@@ -70,7 +68,7 @@ void Arma::dibuja()
 void Arma::atacar(bool secundario)
 {
 	if (!ani1.enProceso() && !ani2.enProceso()) {
-		if (secundario)
+		if (!secundario)
 			ani1.iniciar();
 		else
 			ani2.iniciar();

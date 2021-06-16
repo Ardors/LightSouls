@@ -9,5 +9,6 @@ private:
 	float distPersonaje, distEnemigo, distColiseo;
 public:
 	Enemigo(float x, float y, int vida, float peso, float maxVel, float distPersonaje, float distEnemigo, float distColiseo);
+	void atacar(Personaje p);
 };
 

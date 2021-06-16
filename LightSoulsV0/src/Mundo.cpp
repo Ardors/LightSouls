@@ -26,10 +26,13 @@ void Mundo::mueve()
 	enemigos.rebote(c);
 	enemigos.colision_coliseo(coliseo);
 	Interaccion :: colision_coliseo(c, coliseo);
+	enemigos.atacar(c);
+
 }
 
 void Mundo::inicializa()
 {
+	enemigos.destruirContenido();
 	coliseo.setRadio(10);
 
 	c.cargar("armas/espada.txt");
