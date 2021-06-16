@@ -7,6 +7,7 @@ using ETSIDI::SpriteSequence;
 
 class Arma: public Segmento
 {
+	friend class Interaccion;
 	friend class Luchador;
 	friend class Enemigo;
 	friend class Personaje;
@@ -30,5 +31,6 @@ public:
 	void dibuja();
 	void atacar(bool secundario);
 	void mueve();
+	bool esActiva() { return activa; }
 };
 

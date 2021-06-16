@@ -14,19 +14,18 @@ protected:
 	
 	int vida;
 	float peso = 100, maxVel;
+	float maxAngVel;
 	Arma arma;
 
 public:
 	Luchador() :arma(&pos, &angulo) { 
 		maxVel = 2;
-		cuerpo.setCenter(0.9, 1.25);
-		cuerpo.setSize(1.8, 2.5);
-		piernas.setCenter(1.5, 1.25);
-		piernas.setSize(3, 2.5);
 	}
 	void dibuja();
 	void mueve(float t, Vector obj);
 	void atacar(bool secundario) { arma.atacar(secundario);}
 	void cargar(const char* fichero) { arma.cargar(fichero); }
+	float getVida() { return vida; }
+	float setVida(float vida) { this->vida = vida; }
 };
 

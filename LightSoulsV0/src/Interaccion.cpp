@@ -27,3 +27,11 @@ bool Interaccion::rebote(Luchador& p1, Luchador& p2)
     }
     return false;
 }
+
+void Interaccion::dañoMele(Luchador& atk, Luchador& def)
+{
+    if(atk.arma.esActiva())
+        if (Interaccion::colision(atk.arma, def)) {
+            def.vida-=atk.arma.daño1;
+        }
+}

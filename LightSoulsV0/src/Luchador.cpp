@@ -19,14 +19,17 @@ void Luchador::dibuja()
 	arma.dibuja();
 	glPopMatrix();
 
-	glPushMatrix();
-	glTranslatef(pos.x, pos.y, 0);
-	glRotatef(vel.argumento() * 57.3, 0, 0, 1);
-	piernas.setCenter(vel.modulo()*0.9 , 1.25);
-	piernas.setSize(vel.modulo() * 1.8, 2.5);
-	piernas.draw();
-	glPopMatrix();
-	piernas.loop();
+	//dibujar piernas
+	if (arma.atacando == 0) {
+		glPushMatrix();
+		glTranslatef(pos.x, pos.y, 0);
+		glRotatef(vel.argumento() * 57.3, 0, 0, 1);
+		piernas.setCenter(vel.modulo() * 0.9, 1.1);
+		piernas.setSize(vel.modulo() * 1.8, 2.2);
+		piernas.draw();
+		glPopMatrix();
+		piernas.loop();
+	}
 }
 
 void Luchador::mueve(float t, Vector obj)
@@ -37,7 +40,17 @@ void Luchador::mueve(float t, Vector obj)
 		pos.x += vel.x * t;
 		pos.y += vel.y * t;
 
-		setAng((180 / M_PI) * (obj - getPos()).argumento());
+		//reorientacion
+		float difAng = angulo - (180 / M_PI) * (obj - getPos()).argumento();
+		if (difAng <= -180)
+			difAng += 360;
+		if (difAng > 180)
+			difAng -= 360;
+		if (difAng >= maxAngVel)
+			difAng = maxAngVel;
+		if (difAng <= -maxAngVel)
+			difAng = -maxAngVel;
+		setAng(getAng() - difAng);
 	}
 	arma.mueve();
 }

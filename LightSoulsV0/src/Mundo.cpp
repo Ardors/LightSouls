@@ -24,17 +24,18 @@ void Mundo::mueve()
 	enemigos.mueve(0.025, c, coliseo);
 	enemigos.rebote();
 	enemigos.rebote(c);
+	enemigos.atacar(c);
 }
 
 void Mundo::inicializa()
 {
-	coliseo.setRadio(10);
+	coliseo.setRadio(8);
 
 	c.cargar("armas/garrote.txt");
 
-	enemigos.agregar(new Enemigo(1, 1, 500, 2, 2, 5, 4, 2));
-	enemigos.agregar(new Enemigo(2, 4, 500, 2, 1, 5, 4, 2));
-	enemigos.agregar(new Enemigo(2, 4, 500, 2, 1, 9, 5, 2));
+	enemigos.agregar(new Enemigo(1, 1, 50, 2, 2, 5, 4, 2));
+	enemigos.agregar(new Enemigo(2, 4, 50, 2, 1, 5, 4, 2));
+	enemigos.agregar(new Enemigo(2, 4, 50, 2, 1, 9, 5, 2));
 
 	enemigos[0]->cargar("armas/espada.txt");
 	enemigos[1]->cargar("armas/espada.txt");

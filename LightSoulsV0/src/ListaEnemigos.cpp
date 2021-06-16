@@ -55,6 +55,12 @@ void ListaEnemigos::rebote(Personaje p)
 		Interaccion::rebote(p, *lista[i]);
 }
 
+void ListaEnemigos::atacar(Personaje p)
+{
+	for (int i = 0; i < numero; i++)
+		lista[i]->atacar(p);
+}
+
 bool ListaEnemigos::agregar(Enemigo* e)
 {
 	if (numero < MAX_ENEMIGOS) {

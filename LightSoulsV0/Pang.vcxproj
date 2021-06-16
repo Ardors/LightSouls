@@ -25,6 +25,7 @@
     <ClCompile Include="src\Coliseo.cpp" />
     <ClCompile Include="src\Enemigo.cpp" />
     <ClCompile Include="src\Interaccion.cpp" />
+    <ClCompile Include="src\Izquierda.cpp" />
     <ClCompile Include="src\ListaEnemigos.cpp" />
     <ClCompile Include="src\ListaProyectiles.cpp" />
     <ClCompile Include="src\Maquina_Estados.cpp" />
@@ -47,6 +48,7 @@
     <ClInclude Include="src\Coliseo.h" />
     <ClInclude Include="src\Enemigo.h" />
     <ClInclude Include="src\Interaccion.h" />
+    <ClInclude Include="src\Izquierda.h" />
     <ClInclude Include="src\ListaEnemigos.h" />
     <ClInclude Include="src\ListaProyectiles.h" />
     <ClInclude Include="src\Maquina_Estados.h" />

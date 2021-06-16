@@ -7,5 +7,6 @@ class Personaje: public Luchador
 	friend class Interaccion;
 	
 public:
+	Personaje();
 };
 

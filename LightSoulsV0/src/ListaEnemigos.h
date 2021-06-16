@@ -13,6 +13,7 @@ public:
 	void mueve(float t, Personaje p, Coliseo c);
 	void rebote();
 	void rebote(Personaje p);
+	void atacar(Personaje p);
 	void destruirContenido();
 	void eliminar(int index);
 	void eliminar(Enemigo* e);

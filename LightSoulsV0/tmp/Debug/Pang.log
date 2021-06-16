@@ -1,11 +1,46 @@
-﻿  Mundo.cpp
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(22,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(23,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+﻿  Arma.cpp
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Arma.cpp(63,23): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+  Enemigo.cpp
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(28,27): warning C4244: 'return': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(29,43): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Enemigo.cpp(24,28): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Enemigo.cpp(25,24): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Enemigo.cpp(31,16): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+  Interaccion.cpp
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(28,27): warning C4244: 'return': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(29,43): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+  ListaEnemigos.cpp
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(28,27): warning C4244: 'return': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(29,43): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+  Luchador.cpp
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(28,27): warning C4244: 'return': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(29,43): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.cpp(26,29): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.cpp(27,44): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.cpp(27,34): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.cpp(28,42): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.cpp(28,32): warning C4244: 'argumento': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.cpp(44,16): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+  Maquina_Estados.cpp
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(28,27): warning C4244: 'return': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(29,43): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+  Mundo.cpp
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(28,27): warning C4244: 'return': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(29,43): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
 C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(21,23): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
 C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(21,12): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
 C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(23,22): warning C4305: 'argumento': truncamiento de 'double' a 'float'
 C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(24,34): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(89,12): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
 C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(90,12): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(92,46): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(91,12): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Mundo.cpp(93,46): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  Personaje.cpp
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(28,27): warning C4244: 'return': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(29,43): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Personaje.cpp(9,28): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Personaje.cpp(10,25): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  main.cpp
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(28,27): warning C4244: 'return': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\src\Luchador.h(29,43): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+  Generando código...
   Pang.vcxproj -> C:\Users\pablo\Documents\GitHub\LightSouls\LightSoulsV0\bin\LightSouls.exe

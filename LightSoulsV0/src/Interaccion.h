@@ -12,5 +12,6 @@ public:
 	static bool colision(Segmento s, Circulo c);	
 	static bool colision(Circulo c1, Circulo c2);
 	static bool rebote(Luchador& p1, Luchador& p2);
+	static void dañoMele(Luchador& p1, Luchador& p2);
 };
 
